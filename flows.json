@@ -876,7 +876,7 @@
         "id": "65c14276d9a0153d",
         "type": "modbustcp-server",
         "name": "Server",
-        "host": "192.168.0.211",
+        "host": "192.168.0.111",
         "port": "502",
         "unit_id": 1,
         "reconnecttimeout": ""
@@ -2938,7 +2938,7 @@
         "ioFile": "",
         "useIOForPayload": false,
         "emptyMsgOnFail": false,
-        "x": 250,
+        "x": 230,
         "y": 180,
         "wires": [
             [
@@ -3068,8 +3068,8 @@
         "z": "c53f29ac1342e358",
         "name": "",
         "topic": "",
-        "dataType": "InputRegister",
-        "adr": "10",
+        "dataType": "HoldingRegister",
+        "adr": "0",
         "quantity": "1",
         "rate": "2",
         "rateUnit": "s",
