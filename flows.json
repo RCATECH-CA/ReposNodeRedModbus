@@ -2,7 +2,7 @@
     {
         "id": "cf0ae7fb847811d6",
         "type": "tab",
-        "label": "Fluxo 1",
+        "label": "Dashboard",
         "disabled": false,
         "info": "",
         "env": []
@@ -3146,6 +3146,16 @@
         "info": "",
         "x": 200,
         "y": 760,
+        "wires": []
+    },
+    {
+        "id": "593633f46158d642",
+        "type": "comment",
+        "z": "c53f29ac1342e358",
+        "name": "Modbus Cliente Weintek",
+        "info": "",
+        "x": 230,
+        "y": 120,
         "wires": []
     }
 ]
