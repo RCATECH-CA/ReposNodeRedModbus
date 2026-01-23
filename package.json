@@ -1,0 +1,12 @@
+{
+    "name": "Node-Red_Dashboard_Modbus",
+    "description": "O projeto contêm o dashboard e as aplicações Modbus server e client com Weintek",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
+        }
+    }
+}

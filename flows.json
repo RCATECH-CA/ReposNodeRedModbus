@@ -1,0 +1,3151 @@
+[
+    {
+        "id": "cf0ae7fb847811d6",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "96f3a927602d93bc",
+        "type": "tab",
+        "label": "Página de Configurações",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f89862eb63898992",
+        "type": "tab",
+        "label": "Página de Login",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c53f29ac1342e358",
+        "type": "tab",
+        "label": "Modbus",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "359fdeb420e9b9b7",
+        "type": "ui-base",
+        "name": "button",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "icon",
+        "titleBarStyle": "fixed",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "ce6b7bb8b33f29b6",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#5ccc00",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "035ab89465c806b2",
+        "type": "ui-page",
+        "name": "HOME",
+        "ui": "359fdeb420e9b9b7",
+        "path": "/home",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "ce6b7bb8b33f29b6",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            },
+            {
+                "name": "",
+                "px": "",
+                "cols": ""
+            }
+        ],
+        "order": 1,
+        "className": "var out1 = {          enabled: false // Estado que o botão 'TESTE' deve assumir     };           // 2. Saída 2: Controla o BOTÃO 'MANUTENÇÃO'     var out2 = {          enabled: false // Estado que o botão 'MANUTENÇÃO' deve assumir     };           // Retorna as mensagens por três saídas: [Saída 1, Saída 2, Saída 3]     return [out1, out2]; ",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "c4f275e7c6579203",
+        "type": "ui-page",
+        "name": "ALARMES",
+        "ui": "359fdeb420e9b9b7",
+        "path": "/alarme",
+        "icon": "bell hing",
+        "layout": "grid",
+        "theme": "ce6b7bb8b33f29b6",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "85c0a43fe9b7f435",
+        "type": "ui-page",
+        "name": "RECEITAS",
+        "ui": "359fdeb420e9b9b7",
+        "path": "/receita",
+        "icon": "clipboard-text",
+        "layout": "grid",
+        "theme": "ce6b7bb8b33f29b6",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "496bad1d955bbd04",
+        "type": "ui-page",
+        "name": "CONFIGURAÇÕES",
+        "ui": "359fdeb420e9b9b7",
+        "path": "/configuracao",
+        "icon": "cog",
+        "layout": "grid",
+        "theme": "ce6b7bb8b33f29b6",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": true,
+        "disabled": "false"
+    },
+    {
+        "id": "d84caf2cd37ad3c3",
+        "type": "ui-page",
+        "name": "LOGIN",
+        "ui": "359fdeb420e9b9b7",
+        "path": "/login",
+        "icon": "account",
+        "layout": "grid",
+        "theme": "ce6b7bb8b33f29b6",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 5,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "ed122d3ec038ed10",
+        "type": "ui-group",
+        "name": "Grupo de Botões",
+        "page": "035ab89465c806b2",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "202fa75454f37bc9",
+        "type": "ui-theme",
+        "name": "ui-base.label.theme 2",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#5ccc00",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "782b459131e9ec21",
+        "type": "ui_tab",
+        "name": "Teste",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "04f3d428be764a69",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "116ff796bf19d3ad",
+        "type": "ui_group",
+        "name": "Teste",
+        "tab": "782b459131e9ec21",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eb1af8328c74ce43",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8959fb1e5d91d497",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "eb1af8328c74ce43",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8b45b4625836f1de",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": true,
+        "hidden": true
+    },
+    {
+        "id": "3ddf8ba173f3e8d2",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "8b45b4625836f1de",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0b610f6794247cf1",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bf8ebcdf81f27eeb",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "0b610f6794247cf1",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cc1f7a9555edd4c5",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8a9001b96f52d5b9",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "cc1f7a9555edd4c5",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "21e434cf4ee01898",
+        "type": "ui-group",
+        "name": "Históricos",
+        "page": "c4f275e7c6579203",
+        "width": "6",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "false",
+        "disabled": "true",
+        "groupType": "default"
+    },
+    {
+        "id": "a1213e72f61f1931",
+        "type": "ui-page",
+        "name": "HISTÓRICO",
+        "ui": "359fdeb420e9b9b7",
+        "path": "/histórico",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "ce6b7bb8b33f29b6",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 6,
+        "className": "",
+        "visible": false,
+        "disabled": false
+    },
+    {
+        "id": "47ac88d23cadba3c",
+        "type": "ui-group",
+        "name": "Alarmes",
+        "page": "a1213e72f61f1931",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "a4a1500864b79831",
+        "type": "ui-group",
+        "name": "Grupo de Inputs",
+        "page": "035ab89465c806b2",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6b9e454862331c13",
+        "type": "ui-spacer",
+        "group": "a4a1500864b79831",
+        "name": "spacer 01",
+        "tooltip": "",
+        "order": 2,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "361b4790238be4e7",
+        "type": "ui-group",
+        "z": "96f3a927602d93bc",
+        "name": "Parâmetros",
+        "page": "496bad1d955bbd04",
+        "width": "4",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "true",
+        "groupType": "default"
+    },
+    {
+        "id": "167720b3b0bb6096",
+        "type": "ui-group",
+        "name": "IHM Setup",
+        "page": "496bad1d955bbd04",
+        "width": "4",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "28526fa6e196fc44",
+        "type": "ui-group",
+        "name": "Pagina Adicional",
+        "page": "496bad1d955bbd04",
+        "width": "4",
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "0d0463f3d88c7a1e",
+        "type": "ui-group",
+        "name": "Manutenção",
+        "page": "496bad1d955bbd04",
+        "width": "6",
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "c8b0f8d81e09a45f",
+        "type": "ui-group",
+        "name": "Configurações",
+        "page": "496bad1d955bbd04",
+        "width": "6",
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "251f9d76b8bd6823",
+        "type": "ui-page",
+        "name": "PARÂMETROS",
+        "ui": "359fdeb420e9b9b7",
+        "path": "/parametros",
+        "icon": "",
+        "layout": "grid",
+        "theme": "ce6b7bb8b33f29b6",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 7,
+        "className": "",
+        "visible": "false",
+        "disabled": "false"
+    },
+    {
+        "id": "0f927ddd25d5d2e3",
+        "type": "ui-page",
+        "name": "MANUTENÇÃO",
+        "ui": "359fdeb420e9b9b7",
+        "path": "/manutencao",
+        "icon": "",
+        "layout": "grid",
+        "theme": "ce6b7bb8b33f29b6",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 8,
+        "className": "",
+        "visible": false,
+        "disabled": "false"
+    },
+    {
+        "id": "ff59de7ed65ab387",
+        "type": "ui-group",
+        "name": "Grupo Autenticação",
+        "page": "d84caf2cd37ad3c3",
+        "width": "12",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "120e4bfba49adbde",
+        "type": "ui-group",
+        "name": "Objetos de Título ",
+        "page": "d84caf2cd37ad3c3",
+        "width": "12",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "7101668da8c08296",
+        "type": "ui-group",
+        "name": "Group 12",
+        "page": "035ab89465c806b2",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "bb4b93493e8c275f",
+        "type": "ui-group",
+        "name": "Grupo - Modbus",
+        "page": "035ab89465c806b2",
+        "width": 6,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "57c6ff18767caa8c",
+        "type": "modbus-client",
+        "name": "Modbus",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.0.102",
+        "tcpPort": "10502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "df15df5647c2f86d",
+        "type": "modbus-client",
+        "name": "",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.0.102",
+        "tcpPort": "10502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "e32cfda79a6aafa2",
+        "type": "ui-group",
+        "name": "Group 14",
+        "page": "035ab89465c806b2",
+        "width": 6,
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "70127cb5b3c36eb6",
+        "type": "modbus-client",
+        "name": "Modbus escravo",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.0.211",
+        "tcpPort": "8000",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "65c14276d9a0153d",
+        "type": "modbustcp-server",
+        "name": "Server",
+        "host": "192.168.0.211",
+        "port": "502",
+        "unit_id": 1,
+        "reconnecttimeout": ""
+    },
+    {
+        "id": "b7c88782747a9e57",
+        "type": "ui-template",
+        "z": "cf0ae7fb847811d6",
+        "group": "",
+        "page": "",
+        "ui": "359fdeb420e9b9b7",
+        "name": "Tema Geral",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* Altera os tamanhos de configuração de página*/ \n.v-main {\n    background-color: #e1e1e1 !important; /*define a cor de fundo da área útil*/\n    --v-layout-left: 125px !important;\n    --v-layout-right: 0px !important;\n    --v-layout-top: 64px !important;\n    --v-layout-bottom: 0px !important;\n}\n\nv-toolbar__prepend{\n    display: none;\n}\n\n/*define o espaço entre linhas*/\n:root {\n--widget-row-height: 30px !important;\n}\n\n/*define as cores dos botões*/\n.v-btn--variant-flat{\n    background-color: #a9a9a9 !important;\n    color: #5a5a5a;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 770,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c14b7eba446925bc",
+        "type": "ui-button",
+        "z": "cf0ae7fb847811d6",
+        "group": "21e434cf4ee01898",
+        "name": "Históricos",
+        "label": "Históricos",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "HISTÓRICO",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "4db6acf5f70c3e70"
+            ]
+        ]
+    },
+    {
+        "id": "4db6acf5f70c3e70",
+        "type": "ui-control",
+        "z": "cf0ae7fb847811d6",
+        "name": "Page Históricos",
+        "ui": "359fdeb420e9b9b7",
+        "events": "all",
+        "x": 460,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd9bad4bf2cafd74",
+        "type": "ui-button",
+        "z": "cf0ae7fb847811d6",
+        "group": "47ac88d23cadba3c",
+        "name": "Página de Alarmes",
+        "label": "Alarmes",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "ALARMES",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 190,
+        "y": 220,
+        "wires": [
+            [
+                "4df113d345f4bbb6"
+            ]
+        ]
+    },
+    {
+        "id": "4df113d345f4bbb6",
+        "type": "ui-control",
+        "z": "cf0ae7fb847811d6",
+        "name": "Page Alarms",
+        "ui": "359fdeb420e9b9b7",
+        "events": "all",
+        "x": 470,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "055007d8ab186557",
+        "type": "ui-button",
+        "z": "cf0ae7fb847811d6",
+        "group": "ed122d3ec038ed10",
+        "name": "Botão Padrão Cinza",
+        "label": "OFF",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "ON",
+        "payloadType": "str",
+        "topic": "OFF",
+        "topicType": "msg",
+        "buttonColor": "teste",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 200,
+        "y": 300,
+        "wires": [
+            [
+                "3262b12291b33874"
+            ]
+        ]
+    },
+    {
+        "id": "3262b12291b33874",
+        "type": "debug",
+        "z": "cf0ae7fb847811d6",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e544b3f224da5537",
+        "type": "ui-number-input",
+        "z": "cf0ae7fb847811d6",
+        "group": "a4a1500864b79831",
+        "name": "Input Númerico",
+        "label": "",
+        "order": 1,
+        "width": "1",
+        "height": "1",
+        "topic": "OK",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "tooltip": "",
+        "passthru": true,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "spinner": "default",
+        "x": 180,
+        "y": 360,
+        "wires": [
+            [
+                "3262b12291b33874"
+            ]
+        ]
+    },
+    {
+        "id": "2e63884f6f0dca87",
+        "type": "ui-text-input",
+        "z": "cf0ae7fb847811d6",
+        "group": "a4a1500864b79831",
+        "name": "Input de Texto",
+        "label": "",
+        "order": 3,
+        "width": "1",
+        "height": "1",
+        "topic": "OK",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 180,
+        "y": 420,
+        "wires": [
+            [
+                "3262b12291b33874"
+            ]
+        ]
+    },
+    {
+        "id": "bea966cee342ac50",
+        "type": "ui-text",
+        "z": "cf0ae7fb847811d6",
+        "group": "ed122d3ec038ed10",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Texto",
+        "label": "Texto",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payloads",
+        "valueType": "msg",
+        "x": 150,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "1e58235a935de46b",
+        "type": "ui-template",
+        "z": "cf0ae7fb847811d6",
+        "group": "",
+        "page": "",
+        "ui": "359fdeb420e9b9b7",
+        "name": "Menu de Navg",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "\n/* cuida do menu */\n.v-navigation-drawer {\n    background-color: #5a5a5a; \n    height: calc(100%) !important;\n    width: 125px !important;\n    top: 0px !important;\n    position: fixed !important;\n}\n\n/* cuida do posicionamento do conjunto de botões de navegação do menu*/\n.v-navigation-drawer .v-list {\n    top: 150px !important;\n    left: 0px !important;\n    padding: 25px 0 !important;\n}\n/* cuida das bordas arredondadas dos botões de navegação*/\n.v-list-item--rounded {\n    border-radius: 0px;\n}\n\n/* cuida da linha divisoria entre o botão de navegaçãoe e a main */\n.v-navigation-drawer--left{\n    top: 0;\n    left: 0;\n    right: auto;\n    border-right-width: 0 !important;\n}\n\n/* Oculta o container principal dos tooltips (dicas flutuantes) */\n.v-tooltip {\n    display: none !important;\n}\n/* cuida da cor do titulo do menu */\n.v-list-item-title {\n    color: #cecece;\n}\n/* cuida da cor do icone de expansao do menu */\n.v-theme--nrdb .v-icon--size-default {\n    color: #c3c3c3;\n}\n\n/*cuida do estilo dos icones dos botões de navegação do menu lateral*/\n.v-theme--nrdb .v-icon--size-default {\n    color: #f8f8f8;\n    font-size: 64px;\n    left: 15px !important;\n}\n/*cuida do estilo dos icones dos botões de navegação do menu lateral \nquando estão ativados*/\n.v-list-item--active .v-icon{\n    color: #5a5a5a;\n}\n/*define a cor do botão quando sobreposto pelo cursor*/\n.v-list-item:hover .v-list-item__overlay {\n    display: none !important; /*dasativa a ação*/\n    background-color: rgba(129, 133, 135, 0.9) !important;\n    opacity: 1 !important;\n}\n/*utiliza para criar o efeito visual de \"respingo\" (ripple effect) \nquando um usuário interage (clica ou toca) em um componente\n*/\n.v-ripple__container {\n    display: none !important;\n}\n\n/*define a cor do botão de navegação quando selecionado*/\n.v-list-item--active {\n    background-color: #e1e1e1 !important; \n}\n\n/*define a opacidade do botão de navegação quando selecionado*/\n.v-list-item--variant-text .v-list-item__overlay {\n    background-color: #e1e1e1 !important;\n}\n\n/* Cuida da escrita dos botões de navegação do menu lateral */\n.v-list-item-title {\ndisplay: none !important;\n}\n\n/*cuida das configurações de tamanho e deslocamento em relação as bordas dos botões\nde navegação do menu lateral*/\n.v-list-item--density-default.v-list-item--one-line {\n    min-height: 48px !important;\n    padding-top: 30px !important;\n    padding-bottom: 30px !important;\n}\n\n/* Oculta o botão de menu (hamburger/navegação) na barra de título */\n.v-app-bar .v-app-bar-nav-icon {\n    display: none !important;\n}\nv-card v-theme--nrdb v-card--density-default v-card--variant-outlined bg-group-background{\n    display: none !important;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 780,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "310d033764876bb5",
+        "type": "ui-template",
+        "z": "cf0ae7fb847811d6",
+        "group": "",
+        "page": "",
+        "ui": "359fdeb420e9b9b7",
+        "name": "Template Grupos",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* cuida do grupo */\n.nrdb-ui-group .v-card {\n    box-shadow: none !important;         /* Remove a sombra projetada (elevação) */\n    border: none !important;             /* Remove qualquer borda lateral */\n    background: transparent !important;  /* Torna o fundo do grupo invisível */\n    padding: 5px !important;             /* Define um espaçamento interno mínimo */\n    margin: 0 !important;                /* Remove margens externas */\n}\n.nrdb-ui-group .v-card-title {\n    display: none !important;            /* Esconde o texto do título do grupo */\n    padding: 0px 5px !important;         /* (Inutilizado devido ao display: none) */\n}\n/* cuida da cor do titulo do grupo */\n.v-card-title {\n    color: #c3c3c3;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 790,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a719399497a174c9",
+        "type": "ui-template",
+        "z": "cf0ae7fb847811d6",
+        "group": "",
+        "page": "",
+        "ui": "359fdeb420e9b9b7",
+        "name": "Barra de Título",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* cuida das configurações da barra de titulo */\n.v-app-bar.v-toolbar {\n    background-color: #f8f8f8;\n    height: 64px;\n    left: 125px !important;\n    margin-top: 0 !important;\n    padding-top: 0 !important;\n}\n\n/* cuida da cor do titulo */\n.v-toolbar-title__placeholder {\n    color: #c3c3c3;\n}\n\n\n/*config titulo*/\n.v-toolbar__content>.v-toolbar-title {\n    margin-inline-start: 775px !important;\n}\n.v-toolbar-title {\n    font-size: 2.0rem;\n    font-weight: 400;\n    letter-spacing: 10;\n    line-height: 2.75rem;\n    text-transform: none;\n}\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 780,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1a0344b65c1d745",
+        "type": "ui-template",
+        "z": "cf0ae7fb847811d6",
+        "group": "",
+        "page": "",
+        "ui": "359fdeb420e9b9b7",
+        "name": "Estilo Input Numérico",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* Input Numérico Customizado: #nrdb-ui-widget-e544b3f224da5537 */\n#nrdb-ui-widget-e544b3f224da5537 {\n\n/* Remove a borda e cor de fundo padrão, aplica a cor de fundo F8F8F8 */\n.v-field {\nbackground-color: #f8f8f8 !important; /* Cor de Fundo Solicitada */\nheight: 35px !important; /* Altura do campo */\nborder: none !important;\nborder-image-width: 0px !important;\n--v-field-padding-start: 0px !important;\nfont-weight: bold !important;\n}\n\n.v-field__input {\n/* Centraliza o texto (valor digitado) HORIZONTALMENTE */\ntext-align: center !important;\n\n/* Cor do Texto (Escrita) */\ncolor: green !important; /* Cor Verde Solicitada */\n\n/* Garante o alinhamento de Altura */\nmin-height: 35px !important;\nheight: 35px !important;\nline-height: 35px !important; /* Ajuda na centralização vertical */\npadding-top: 0 !important;\npadding-bottom: 0 !important;\npadding-inline: 0 !important;\n}\n\n/* Esconde os containers dos botões de incremento/decremento */\n.v-field__append-inner,\n.v-field__prepend-inner {\ndisplay: none !important;\n}\n\n    /* SELETORES CRUCIAIS: Remove todas as linhas de desenho do Vuetify, incluindo a linha de foco. */\n    .v-field__outline,\n    .v-field__overlay,\n    .v-field__field::before,\n    .v-field__field::after,\n    .v-field__input::before,\n    .v-field__input::after {\n        border: none !important;\n        box-shadow: none !important;\n        /* Esconde completamente os elementos de desenho (garante que sumam) */\n        display: none !important; \n    }\n\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 800,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc0d988c25b61a51",
+        "type": "ui-template",
+        "z": "cf0ae7fb847811d6",
+        "group": "",
+        "page": "",
+        "ui": "359fdeb420e9b9b7",
+        "name": "Estilo Input Texto",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* Input Textual Customizado: #nrdb-ui-widget-2e63884f6f0dca87 */\n#nrdb-ui-widget-2e63884f6f0dca87{\n    /* Remove a borda e cor de fundo padrão, aplica a cor de fundo F8F8F8 */\n    .v-field {\n    background-color: #f8f8f8 !important; /* Cor de Fundo Solicitada */\n    height: 35px !important; /* Altura do campo */\n    border: none !important;\n    border-image-width: 0px !important;\n    --v-field-padding-start: 0px !important;\n    font-weight: bold !important;\n    }\n        /* SELETORES CRUCIAIS: Remove todas as linhas de desenho do Vuetify, incluindo a linha de foco. */\n        .v-field__outline,\n        .v-field__overlay,\n        .v-field__field::before,\n        .v-field__field::after,\n        .v-field__input::before,\n        .v-field__input::after {\n        border: none !important;\n        box-shadow: none !important;\n        /* Esconde completamente os elementos de desenho (garante que sumam) */\n        display: none !important;\n        }\n        \n    .v-field__input {\n    /* Centraliza o texto (valor digitado) HORIZONTALMENTE */\n    text-align: center !important;\n    \n    /* Cor do Texto (Escrita) */\n    color: green !important; /* Cor Verde Solicitada */\n    \n    /* Garante o alinhamento de Altura */\n    min-height: 35px !important;\n    height: 35px !important;\n    line-height: 35px !important; /* Ajuda na centralização vertical */\n    padding-top: 0 !important;\n    padding-bottom: 0 !important;\n    padding-inline: 0 !important;\n    }\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 790,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6b06d15ee3bbeaf6",
+        "type": "ui-template",
+        "z": "cf0ae7fb847811d6",
+        "group": "",
+        "page": "",
+        "ui": "359fdeb420e9b9b7",
+        "name": "Grupo Home-Botões",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/*Define exibição do grupo Home->Botões como none*/\n#nrdb-ui-group-ed122d3ec038ed10 .v-card{\n    box-shadow: none !important;\n    border: none !important;\n    background: transparent !important;\n    padding: 5px !important;\n    margin: 0 !important;\n}\n#nrdb-ui-group-ed122d3ec038ed10 .v-card-title {\n    display: none !important;\n    padding: 0px 5px !important;\n}\n/*altera as propriedades do botão padrão*/\n#nrdb-ui-widget-055007d8ab186557 .v-btn--variant-flat {\n    background-color: #5a5a5a !important;\n    color: #f8f8f8;\n    height: 35px !important;\n    width: 10px !important;\n}\n#nrdb-ui-widget-055007d8ab186557 .v-btn--variant-flat:active{\n    /* Escolha a cor que você deseja que o botão tenha quando pressionado */\n    background-color: #f8f8f8 !important; /* Exemplo: Amarelo/Laranja */\n    color: #5a5a5a !important;  \n    font-weight: bold !important; \n}\n#nrdb-ui-widget-055007d8ab186557 .v-btn:active{\n    /* Mudar para uma borda amarela ao pressionar, por exemplo */\n    border: 2px solid #5a5a5a !important; \n    font-weight: bold !important;\n}\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 800,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "deefb4e00ac284f1",
+        "type": "ui-template",
+        "z": "cf0ae7fb847811d6",
+        "group": "",
+        "page": "",
+        "ui": "359fdeb420e9b9b7",
+        "name": "Grupo Histórico-Alarmes",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/*Define exibição do grupo Histórico->Alarmes como none*/\n#nrdb-ui-group-21e434cf4ee01898 .v-card {\n    box-shadow: none !important;\n    border: none !important;\n    background: transparent !important;\n    padding: 5px !important;\n    margin: 0 !important;\n}\n\n#nrdb-ui-group-21e434cf4ee01898 .v-card-title {\n    display: none !important;\n    padding: 0px 5px !important;\n}\n\n/*Define o tamanho e o posicionamento do botão de navegação históricos*/\n#nrdb-ui-widget-c14b7eba446925bc{\n    left: -35px !important;\n    top: -38px !important;\n    height: 35px !important;\n    width: 175px !important;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 810,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e84e9e7690097e9f",
+        "type": "ui-template",
+        "z": "cf0ae7fb847811d6",
+        "group": "",
+        "page": "",
+        "ui": "359fdeb420e9b9b7",
+        "name": "Grupo Alarmes-Históricos",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/*Define exibição do grupo Alarmes->Históricos como none*/\n#nrdb-ui-group-47ac88d23cadba3c .v-card {\n    box-shadow: none !important;\n    border: none !important;\n    background: transparent !important;\n    padding: 5px !important;\n    margin: 0 !important;\n}\n\n#nrdb-ui-group-47ac88d23cadba3c .v-card-title {\n    display: none !important;\n    padding: 0px 5px !important;\n}\n\n/*Define o tamanho e o posicionamento do botão de navegação históricos*/\n#nrdb-ui-widget-cd9bad4bf2cafd74{\n    left: -35px !important;\n    top: -38px !important;\n    height: 35px !important;\n    width: 175px !important;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 810,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d84c64d69368c503",
+        "type": "comment",
+        "z": "cf0ae7fb847811d6",
+        "name": "Templates",
+        "info": "",
+        "x": 760,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "bd5beda3f0c3995c",
+        "type": "ui-template",
+        "z": "96f3a927602d93bc",
+        "group": "",
+        "page": "496bad1d955bbd04",
+        "ui": "",
+        "name": "Grupos Centralizados ",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* Este CSS pode afetar todas as páginas. Use com cuidado. */\n.v-main {\n/* Ativa o Flexbox no container principal */\ndisplay: flex;\n/* Centraliza o conteúdo (grupos) verticalmente */\njustify-content: center;\n/* Opcional: Centraliza o conteúdo horizontal (se o conteúdo for menor que a tela) */\nalign-items: center;\n/* Opcional: Garante que o layout comece de cima para baixo */\nflex-direction: column;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 260,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b6c28a3ee56aeb9",
+        "type": "ui-button",
+        "z": "96f3a927602d93bc",
+        "group": "361b4790238be4e7",
+        "name": "PARÂMETROS",
+        "label": "PARÂMETROS",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "PARÂMETROS",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 800,
+        "y": 360,
+        "wires": [
+            [
+                "1573efa569edb895"
+            ]
+        ]
+    },
+    {
+        "id": "c74889934388d8e4",
+        "type": "ui-template",
+        "z": "96f3a927602d93bc",
+        "group": "",
+        "page": "496bad1d955bbd04",
+        "ui": "",
+        "name": "Botão Padrão Cinza",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* Define as Conf. dos botões da página*/\n\n/*estado padrão (OFF)*/\n.v-btn--variant-flat {\n    background-color: #5a5a5a !important;\n    color: #f8f8f8 !important;\n    font-size: 14px;\n    font-weight: bold !important;\n    height: 60px !important; \n    min-width: 150px !important; /* Use min-width para garantir o mínimo */\n    max-width: 150px !important; /* Use max-width para impedir a expansão */\n    width: 150px !important;     /* Definição de largura */\n\n}\n\n/*Ativo (ON)*/\n.v-btn--variant-flat:active {\n    color: #3cb371 !important;\n    font-weight: bold !important;\n    font-size: 14px;\n}\n\n/*sobreposto pelo cursor*/\n.v-btn:hover .v-btn__overlay{\n    display: none !important;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 260,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "484da116ad3927f3",
+        "type": "ui-button",
+        "z": "96f3a927602d93bc",
+        "group": "167720b3b0bb6096",
+        "name": "IHM SETUP",
+        "label": "IHM SETUP",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "ON",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": false,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 790,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "06d7da65636307d2",
+        "type": "ui-button",
+        "z": "96f3a927602d93bc",
+        "group": "28526fa6e196fc44",
+        "name": "PÁGINA ADICIONAL",
+        "label": "PÁGINA AD.",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "ON",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 820,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47ff3a5e841332d0",
+        "type": "ui-button",
+        "z": "96f3a927602d93bc",
+        "group": "0d0463f3d88c7a1e",
+        "name": "MANUTENÇÃO",
+        "label": "MANUTENÇÃO",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "MANUTENÇÃO",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 800,
+        "y": 480,
+        "wires": [
+            [
+                "0a6e5bbd7df60506"
+            ]
+        ]
+    },
+    {
+        "id": "1b342ba003cbfe3e",
+        "type": "ui-button",
+        "z": "96f3a927602d93bc",
+        "group": "c8b0f8d81e09a45f",
+        "name": "CONFIGURAÇÕES",
+        "label": "CONFIGURAÇÕES",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "ON",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 820,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "36c3c4d048f7358d",
+        "type": "ui-template",
+        "z": "96f3a927602d93bc",
+        "group": "",
+        "page": "496bad1d955bbd04",
+        "ui": "",
+        "name": "Centraliza Elementos do Grupo",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/*centraliza botão MANUTENÇÃO*/\n#nrdb-ui-widget-47ff3a5e841332d0 .v-btn{\n    left: 100px;\n} \n/*centraliza botão CONFIGURAÇÕES*/\n#nrdb-ui-widget-47ff3a5e841332d0 .v-btn{\n    left: 100px;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 290,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6789952e8604997",
+        "type": "comment",
+        "z": "96f3a927602d93bc",
+        "name": "Botões da pág Confg",
+        "info": "",
+        "x": 820,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "bd2f19060f9e3cda",
+        "type": "comment",
+        "z": "96f3a927602d93bc",
+        "name": "Estilos da pág Confg",
+        "info": "**-> Grupos Centralizados:**\nCentraliza todos os grupos contidos na página (horizontal e vertical)\n\n**-> Botão Padrão Cinza: **\nEsse template será aplicado em qualquer botão \nque for adicionado a página.\n\n**-> Centraliza Elementos do Grupo:**\nEsse template foi utilizado para centralizar (horizontal)\nespecificamente os botões MANUTENÇÃO e CONFIGURAÇÕES. ",
+        "x": 250,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1573efa569edb895",
+        "type": "ui-control",
+        "z": "96f3a927602d93bc",
+        "name": "Página Parâmetros",
+        "ui": "359fdeb420e9b9b7",
+        "events": "all",
+        "x": 1090,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5661a77140a1d4e",
+        "type": "link in",
+        "z": "96f3a927602d93bc",
+        "name": "link botton parâmetros",
+        "links": [
+            "5ce92e8e8ecdec98"
+        ],
+        "x": 555,
+        "y": 340,
+        "wires": [
+            [
+                "9b6c28a3ee56aeb9"
+            ]
+        ]
+    },
+    {
+        "id": "7eda44707a324013",
+        "type": "link in",
+        "z": "96f3a927602d93bc",
+        "name": "link botton manutenção",
+        "links": [
+            "c08aab6c5f41acb2"
+        ],
+        "x": 555,
+        "y": 500,
+        "wires": [
+            [
+                "47ff3a5e841332d0"
+            ]
+        ]
+    },
+    {
+        "id": "d238ff62d29e2a93",
+        "type": "link in",
+        "z": "96f3a927602d93bc",
+        "name": "link desabilita botões",
+        "links": [
+            "1be66e2996114071"
+        ],
+        "x": 555,
+        "y": 420,
+        "wires": [
+            [
+                "9b6c28a3ee56aeb9",
+                "47ff3a5e841332d0"
+            ]
+        ]
+    },
+    {
+        "id": "0a6e5bbd7df60506",
+        "type": "ui-control",
+        "z": "96f3a927602d93bc",
+        "name": "Página Manutenção",
+        "ui": "359fdeb420e9b9b7",
+        "events": "all",
+        "x": 1100,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c66822fce0cee7d",
+        "type": "function",
+        "z": "f89862eb63898992",
+        "name": "Senha: 8504",
+        "func": "/*=============================== Função Full ==========================================*/\n\nif (msg.payload === '8504') {\n   \n    node.send({ payload: { 'page': 'CONFIGURAÇÕES' }});\n\n\n    setTimeout(function () {\n        node.send({\n            payload: {\n                groups: {\n                    show: [\n                        'CONFIGURAÇÕES:PARÂMETROS',\n                        'CONFIGURAÇÕES:IHM SETUP',\n                        'CONFIGURAÇÕES:PÁGINA ADICIONAL',\n                        'CONFIGURAÇÕES:MANUTENÇÃO',\n                        'CONFIGURAÇÕES:CONFIGURAÇÕES',\n                        'CONFIGURAÇÕES:LOGOFF'\n                    ]\n                }\n            }\n        });\n    }, 10);\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 110,
+        "y": 80,
+        "wires": [
+            []
+        ],
+        "info": "link do vídeo de consulta - https://www.youtube.com/watch?v=mJMjla9Stns\r\n"
+    },
+    {
+        "id": "a87b3eabbc65772b",
+        "type": "function",
+        "z": "f89862eb63898992",
+        "name": "function 1",
+        "func": "/*=============================== Habilitar Botões após o Login ==========================================*/\n\nif (msg.payload === '8504') {\n    \n    // 1. Habilita o BOTÃO que leva à página 'PARÂMETROS'\n    node.send({\n        payload: {\n            // Use o 'topic' EXATO do seu botão (definido no nó UI Button)\n            topic: 'TESTE', \n            enabled: true\n        }\n    });\n\n    // 2. Habilita o BOTÃO que leva à página 'IHM SETUP'\n    node.send({\n        payload: {\n            topic: 'botao_ihm_setup', \n            enabled: true\n        }\n    });\n    \n    // Repita para todos os botões restritos...\n\n    // 3. Navega para a página de destino (CONFIGURAÇÕES)\n    node.send({ payload: { 'page': 'CONFIGURAÇÕES' }});\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 100,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ce92e8e8ecdec98",
+        "type": "link out",
+        "z": "f89862eb63898992",
+        "name": "link botton parâmetros",
+        "mode": "link",
+        "links": [
+            "c5661a77140a1d4e"
+        ],
+        "x": 1095,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "c08aab6c5f41acb2",
+        "type": "link out",
+        "z": "f89862eb63898992",
+        "name": "link botton manutenção",
+        "mode": "link",
+        "links": [
+            "7eda44707a324013"
+        ],
+        "x": 1095,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2611fdd31d53d9f0",
+        "type": "comment",
+        "z": "f89862eb63898992",
+        "name": "Tentativas de login",
+        "info": "",
+        "x": 110,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "b565c096a4784434",
+        "type": "inject",
+        "z": "f89862eb63898992",
+        "name": "Desabilita Botões",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 490,
+        "y": 320,
+        "wires": [
+            [
+                "6e9ee2875e43864c"
+            ]
+        ],
+        "info": "Esse carimbo de data e hora está sendo utilizado \r\naqui com o intuito de desabilitar o acesso dos botões \r\nrestritos, isso irá ocorrer após o deploy e \r\nquando o Dashboard é carregado."
+    },
+    {
+        "id": "6e9ee2875e43864c",
+        "type": "function",
+        "z": "f89862eb63898992",
+        "name": "Desabilita Botões",
+        "func": "// Envia a mensagem de desabilitação\nreturn { enabled: false };",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 320,
+        "wires": [
+            [
+                "1be66e2996114071"
+            ]
+        ]
+    },
+    {
+        "id": "1be66e2996114071",
+        "type": "link out",
+        "z": "f89862eb63898992",
+        "name": "link dasabilita botões",
+        "mode": "link",
+        "links": [
+            "d238ff62d29e2a93"
+        ],
+        "x": 1095,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "bcfb348819d78000",
+        "type": "comment",
+        "z": "f89862eb63898992",
+        "name": "Desalibita Botões Parâmetros e Manutenção",
+        "info": "Esse bloco de nós tem o intuito de desabilitar\nos botões de acesso restrito.",
+        "x": 550,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "eeff319b82082802",
+        "type": "ui-template",
+        "z": "f89862eb63898992",
+        "d": true,
+        "group": "ff59de7ed65ab387",
+        "page": "",
+        "ui": "",
+        "name": "Template Botão Logoff",
+        "order": 1,
+        "width": "3",
+        "height": "6",
+        "head": "",
+        "format": "<template>\n  <div class=\"card_user\">\n    <v-btn class=\"buton_logoff\" @click=\"start\">\n      <div class=\"title_logoff\">LOGOFF</div>\n    </v-btn>\n  </div>\n</template>\n\n<script>\n  export default {\n    methods: {\n      start: function () { \n      // Pequeno delay de 100ms para o feedback visual do clique\n        setTimeout(() => {\n          this.send({ payload: 'ON' });\n        }, 100);\n      },\n    }\n };\n</script>\n\n\n<style>\n\n  /* --- ESTILO ESPECÍFICO --- */\n\n  .card_user {\n\n    /* Ajuste Crucial: Removendo 'margin: auto' e definindo width: 100%\n\n  para que ele se alinhe à esquerda no slot de 1 unidade.\n\n  */\n\n    display: flex;\n\n    flex-direction: column;\n\n    margin: auto;\n\n    width: 100% !important;\n\n    background-color: transparent;\n\n    /* Transparente para não chocar com o card do usuário */\n\n    border-radius: 10px;\n\n    align-items: center;\n\n    right: 35px !important;\n\n    margin-hight: 50px;\n\n    padding: 50px;\n\n    /* Centraliza o botão dentro da coluna */\n\n  }\n\n\n\n  .buton_logoff {\n\n  display: flex;\n\n  flex-direction: column;\n\n  height: 45px !important;\n\n  width: 130px !important;\n\n  background-color: #4F4F4F;\n\n  color: #ffffff;\n\n  border: 1px solid #000000;\n\n  font-size: 14px;\n\n  border-radius: 10px;\n\n  justify-content: center;\n\n  align-items: center;\n\n\n\n  /* --- AJUSTE PARA NÃO CORTAR --- */\n\n  position: relative;\n\n  /* Usamos margin-left negativa para puxar para a esquerda */\n\n  /* E margin-top negativa para subir, mas sem sair do fluxo total */\n\n  margin-left: -60px !important;\n\n  margin-top: -40px !important;\n\n \n\n  /* Se ainda precisar de ajuste fino, use o transform moderadamente */\n\n  transform: translate(-50px, 0px);\n\n \n\n  z-index: 999; /* Garante que fique por cima de outros textos */\n\n}\n\n\n\n  .title_logoff {\n\n    font-size: 100%;\n\n    line-height: 1;\n\n    /* Para melhor alinhamento */\n\n  }\n\n\n\n  #nrdb-ui-widget-eeff319b82082802{\n\n    right: 15px;\n\n  }\n\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 480,
+        "y": 400,
+        "wires": [
+            [
+                "6226ada1b792a6ef"
+            ]
+        ]
+    },
+    {
+        "id": "6226ada1b792a6ef",
+        "type": "function",
+        "z": "f89862eb63898992",
+        "name": "Function Logoff",
+        "func": "/*============================ Função Logoff ================================*/\nif (msg.payload === 'ON') {\n    // 1. Saída 1: Controla o BOTÃO 'TESTE'\n    // Apenas a propriedade 'enabled' é necessária na raiz da mensagem.\n    var out1 = { \n        enabled: false // Estado que o botão 'TESTE' deve assumir\n    }; \n    \n    // 2. Saída 2: Controla o BOTÃO 'MANUTENÇÃO'\n    var out2 = { \n        enabled: false // Estado que o botão 'MANUTENÇÃO' deve assumir\n    }; \n    \n    // Retorna as mensagens por três saídas: [Saída 1, Saída 2, Saída 3]\n    return [out1, out2]; \n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 400,
+        "wires": [
+            [
+                "1be66e2996114071"
+            ]
+        ]
+    },
+    {
+        "id": "42419318aa2d273b",
+        "type": "ui-control",
+        "z": "f89862eb63898992",
+        "name": "Detecta Mudança de Pág.",
+        "ui": "359fdeb420e9b9b7",
+        "events": "change",
+        "x": 490,
+        "y": 480,
+        "wires": [
+            [
+                "a9b229faac8f9106",
+                "f2d09a700e687ec7"
+            ]
+        ],
+        "info": "**Link para consulta do nó ui-control**\r\nhttps://dashboard.flowfuse.com/nodes/widgets/ui-control.html"
+    },
+    {
+        "id": "a9b229faac8f9106",
+        "type": "function",
+        "z": "f89862eb63898992",
+        "name": "Function Change Page",
+        "func": "/*|||||||||||||||||||||||||||| Desabilita Botões quando há mudança de página||||||||||||||||||||||||||||*/ \n\nif (msg.payload === 'change') {\n    // Verifica se msg.name corresponde a qualquer uma das páginas\n    if (msg.name === 'HOME' || msg.name === 'ALARMES' || msg.name === 'RECEITAS' || msg.name === 'LOGIN') {\n        // 1. Saída 1: Controla os botões restritos'\n        var out1 = { \n            enabled: false \n        }; \n\n        // Retorna a mensagem para desabilitar os botões restritos\n        return [out1]; \n    } \n    \n    // Se msg.payload é 'change' mas msg.name não corresponde a nenhuma das páginas.\n    return msg;\n}\n\n// Se msg.payload não é 'change', retorna a mensagem original.\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 480,
+        "wires": [
+            [
+                "a8845cfe159ca001",
+                "1be66e2996114071"
+            ]
+        ]
+    },
+    {
+        "id": "f2d09a700e687ec7",
+        "type": "debug",
+        "z": "f89862eb63898992",
+        "name": "debug verifica mudança de página",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a8845cfe159ca001",
+        "type": "debug",
+        "z": "f89862eb63898992",
+        "name": "debug verifica botões desabilitados",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "4d10fb5f9cb449b3",
+        "type": "comment",
+        "z": "f89862eb63898992",
+        "name": "Habilita Botões Parâmetros e Manutenção",
+        "info": "Esse bloco de nós tem o intuito de habilitar\nos botões de acesso restrito.",
+        "x": 540,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4521135dc2365983",
+        "type": "ui-template",
+        "z": "f89862eb63898992",
+        "group": "120e4bfba49adbde",
+        "page": "",
+        "ui": "",
+        "name": "Template Tela de Login",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": "================================== Tela de Login ===================================== \n<template>\n    <div class=\"text_login\">LOGIN</div>\n    <div class=\"line_login\"></div>\n</template>\n\n<style>\n/*centraliza elementos da tela*/\n.v-main {\n  display: flex; \n  justify-content: center; \n  flex-direction: column; \n  align-items: center; }\n\n/* texto verde \"LOGIN\" */\n.text_login {\n  color: #00803b;\n  font-size: 24px;\n  font-weight: bold;\n  text-align: center;\n}\n\n/* linha verde */\n.line_login {\n  width: 1000px;               /* ajuste aqui se quiser maior/menor */\n  height: 4px;              /* espessura da linha */\n  background-color: #00803b;\n  border-radius: 2px;\n}\n/* spacer */\n.spacer {\n  width: 100%;               /* ajuste aqui se quiser maior/menor */\n  height: 20px;              /* espessura da linha */\n  background-color: #e1e1e1;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 150,
+        "y": 260,
+        "wires": [
+            []
+        ],
+        "info": "Esse template carrega os estilos de alguns componentes da tela de login.\r\n-> Texto login\r\n-> Linha verde da tela de login\r\n-> Espaçamento entre as telas de login"
+    },
+    {
+        "id": "853fbc25ee2f8114",
+        "type": "comment",
+        "z": "f89862eb63898992",
+        "name": "Template da Tela de Login",
+        "info": "",
+        "x": 150,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "eb076af95c949eb1",
+        "type": "ui-template",
+        "z": "f89862eb63898992",
+        "d": true,
+        "group": "ff59de7ed65ab387",
+        "page": "",
+        "ui": "",
+        "name": "Template Botão Login/User",
+        "order": 2,
+        "width": "9",
+        "height": "6",
+        "head": "",
+        "format": "<template>\n  <div class=\"card_login\" :class=\"{ 'background_login': active }\">\n    <v-text-field class=\"input_login\" label=\"Usuário\" variant=\"outlined\" v-model=\"usuario\"></v-text-field>\n\n    <div class=\"row_senha\">\n      <v-text-field class=\"input_login_senha\" type=\"password\" label=\"Senha\" variant=\"outlined\" v-model=\"senha\"\n        @keyup.enter=\"sendOTP\"></v-text-field>\n\n      <v-btn class=\"button_login\" @click=\"sendOTP\">LOGIN</v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      usuario: '', // Nova variável\n      senha: '',\n      active: false\n    };\n  },\n  methods: {\n    sendOTP() {\n      this.active = true;\n      setTimeout(() => {\n        // Agora o payload envia um objeto com as duas informações\n        this.send({ \n          payload: { \n            user: this.usuario, \n            pass: this.senha \n          } \n        });\n\n        // Limpa ambos os campos após o envio\n        this.usuario = '';\n        this.senha = '';\n        this.active = false;\n      }, 1000);\n    },\n  }\n}\n</script>\n\n\n<style>\n/* Container principal (Coluna) */\n.card_login {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  margin-left: 50px;\n  background-color: transparent;\n  border-radius: 3px;\n  gap: 20px; /* Espaço entre o campo usuário e a linha da senha */\n  width: fit-content; /* Ajusta ao tamanho do conteúdo */\n}\n\n/* Nova linha para Senha + Botão */\n.row_senha {\n  display: flex;\n  flex-direction: row; /* Coloca lado a lado */\n  align-items: center;  /* Alinha verticalmente no meio */\n  gap: 50px;           /* Espaço entre a senha e o botão */\n  width: 100%;\n}\n\n/* Campo de Usuário (largura total) */\n.input_login {\n  width: 500px !important;\n  flex-shrink: 0 !important;\n}\n\n/* Campo de Senha (ajustado para caber o botão ao lado) */\n.input_login_senha {\n  width: 500px !important; /* Diminuído para sobrar espaço para o botão */\n  flex-shrink: 0 !important;\n}\n\n/* Botão */\n.button_login {\n  background-color: #4F4F4F !important;\n  border: 1px solid #000000;\n  border-radius: 10px;\n  color: #ffffff !important;\n  width: 130px !important; \n  height: 45px !important; \n  flex-shrink: 0 !important;\n}\n\n/* Reset de cores e detalhes do Vuetify */\n.v-field__overlay {\n  background-color: #f8f8f8 !important;\n}\n.v-input__details {\n  display: none !important;\n}\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "eed7388cfcfe9ae5"
+            ]
+        ]
+    },
+    {
+        "id": "eed7388cfcfe9ae5",
+        "type": "function",
+        "z": "f89862eb63898992",
+        "name": "Us: admin Senha: 8504",
+        "func": "// Agora o payload é um objeto: { user: \"seu_usuario\", pass: \"8504\" }\n// Se os campos estiverem vazios, não faz nada e não envia erro\nif (!msg.payload.user || !msg.payload.pass) {\n    return [null, null, null, { payload: { alert: \" \" } }];\n}\n// 1. Verificamos se o usuário e a senha estão corretos\nif (msg.payload.user === 'admin' && msg.payload.pass === '8504') {\n    \n    // Saída 1: Habilita o BOTÃO 'TESTE'\n    var out1 = { \n        enabled: true \n    }; \n    \n    // Saída 2: Habilita o BOTÃO 'MANUTENÇÃO'\n    var out2 = { \n        enabled: true \n    }; \n    \n    // Saída 3: Navega para a página de destino\n    var out3 = { \n        payload: { \n            page: 'CONFIGURAÇÕES' \n        } \n    };\n    \n    return [out1, out2, out3, { payload: { alert: \"Sucesso\" } }]; \n}\n\n//  Envia um alerta de erro se o login falhar\n return [null, null, null, { payload: { alert: \"Usuário ou senha incorretos\" } }];\n\n//return null;",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 140,
+        "wires": [
+            [
+                "5ce92e8e8ecdec98"
+            ],
+            [
+                "c08aab6c5f41acb2"
+            ],
+            [
+                "06a86f884c077acd"
+            ],
+            [
+                "60c1078d26c16eea"
+            ]
+        ]
+    },
+    {
+        "id": "06a86f884c077acd",
+        "type": "ui-control",
+        "z": "f89862eb63898992",
+        "name": "Página Configurações",
+        "ui": "359fdeb420e9b9b7",
+        "events": "all",
+        "x": 1180,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f80fa80fb94d6ba7",
+        "type": "ui-template",
+        "z": "f89862eb63898992",
+        "group": "ff59de7ed65ab387",
+        "page": "",
+        "ui": "",
+        "name": "Template Login/Logoff",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": "<template>\n  <div class=\"card_login\" :class=\"{ 'background_login': active }\">\n    <div class=\"row_senha\">\n    <v-text-field class=\"input_login\" label=\"Usuário\" variant=\"outlined\" v-model=\"usuario\"></v-text-field>\n\n    <v-btn class=\"button_logoff\" @click=\"start\">LOGOFF</v-btn>\n    </div>\n    \n    <div class=\"row_senha\">\n      <v-text-field class=\"input_login_senha\" type=\"password\" label=\"Senha\" variant=\"outlined\" v-model=\"senha\"\n        @keyup.enter=\"sendOTP\"></v-text-field>\n\n      <v-btn class=\"button_login\" @click=\"sendOTP\">LOGIN</v-btn>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      usuario: '', // Nova variável\n      senha: '',\n      active: false\n    };\n  },\n  methods: {\n    sendOTP() {\n      this.active = true;\n      setTimeout(() => {\n        // Agora o payload envia um objeto com as duas informações\n        this.send({ \n          payload: { \n            user: this.usuario, \n            pass: this.senha \n          } \n        });\n\n        // Limpa ambos os campos após o envio\n        this.usuario = '';\n        this.senha = '';\n        this.active = false;\n      }, 1000);\n    },\n\n    start: function () {\n    // Pequeno delay de 100ms para o feedback visual do clique\n    setTimeout(() => {\n    this.send({ payload: 'ON' });\n    }, 100);\n    },\n\n  }\n}\n</script>\n\n\n<style>\n/* Container principal (Coluna) */\n.card_login {\n  display: flex;\n  flex-direction: column;\n // align-items: center;\n  margin-left: 150px;\n  background-color: transparent;\n  border-radius: 3px;\n  gap: 20px; /* Espaço entre o campo usuário e a linha da senha */\n  width: fit-content; /* Ajusta ao tamanho do conteúdo */\n}\n\n/* Nova linha para Senha + Botão */\n.row_senha {\n  display: flex;\n  flex-direction: row; /* Coloca lado a lado */\n  align-items: center;  /* Alinha verticalmente no meio */\n  gap: 50px;           /* Espaço entre a senha e o botão */\n  width: 100%;\n}\n\n/* Campo de Usuário (largura total) */\n.input_login {\n  width: 500px !important;\n  flex-shrink: 0 !important;\n}\n\n/* Campo de Senha (ajustado para caber o botão ao lado) */\n.input_login_senha {\n  width: 500px !important; /* Diminuído para sobrar espaço para o botão */\n  flex-shrink: 0 !important;\n}\n\n/* Botão */\n.button_login {\n  background-color: #4F4F4F !important;\n  border: 1px solid #000000;\n  border-radius: 10px;\n  color: #ffffff !important;\n  width: 130px !important; \n  height: 45px !important; \n  flex-shrink: 0 !important;\n}\n\n.button_logoff {\nbackground-color: #4F4F4F !important;\nborder: 1px solid #000000;\nborder-radius: 10px;\ncolor: #ffffff !important;\nwidth: 130px !important;\nheight: 45px !important;\nflex-shrink: 0 !important;\n}\n\n/* Reset de cores e detalhes do Vuetify */\n.v-field__overlay {\n  background-color: #f8f8f8 !important;\n}\n.v-input__details {\n  display: none !important;\n}\n/* Esconde o label quando o campo entra em foco ou tem conteúdo */\n.v-field--focused .v-label,\n.v-field--has-value .v-label {\nvisibility: hidden !important;\nopacity: 0 !important;\n}\n /* SELETORES CRUCIAIS: Remove todas as linhas de desenho do Vuetify, incluindo a linha de foco. */\n .v-field__outline{\n border: none !important;\n box-shadow: none !important;\n /* Esconde completamente os elementos de desenho (garante que sumam) */\n display: none !important;\n}\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 480,
+        "y": 200,
+        "wires": [
+            [
+                "eed7388cfcfe9ae5",
+                "6226ada1b792a6ef"
+            ]
+        ]
+    },
+    {
+        "id": "60c1078d26c16eea",
+        "type": "ui-text",
+        "z": "f89862eb63898992",
+        "group": "ff59de7ed65ab387",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Return Error",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload.alert",
+        "valueType": "msg",
+        "x": 1150,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "d57e2ba1ce468c83",
+        "type": "modbus-server",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "logEnabled": false,
+        "hostname": "0.0.0.0",
+        "serverPort": "10502",
+        "responseDelay": 100,
+        "delayUnit": "ms",
+        "coilsBufferSize": 10000,
+        "holdingBufferSize": 10000,
+        "inputBufferSize": 10000,
+        "discreteBufferSize": 10000,
+        "showErrors": false,
+        "showStatusActivities": false,
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f6afd03000508bd2",
+        "type": "ui-template",
+        "z": "c53f29ac1342e358",
+        "group": "",
+        "page": "035ab89465c806b2",
+        "ui": "",
+        "name": "Estilo Input",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* Input Numérico Customizado: #nrdb-ui-widget-920ae39f721a0ac5 */\n#nrdb-ui-widget-920ae39f721a0ac5, #nrdb-ui-widget-900367d02d565c94, #nrdb-ui-widget-2d12225601a7acef, #nrdb-ui-widget-321159884fe4b822, #nrdb-ui-widget-daacc54f04259989, #nrdb-ui-widget-8c8ac024df895b72  {\n\n/* Remove a borda e cor de fundo padrão, aplica a cor de fundo F8F8F8 */\n.v-field {\nbackground-color: #f8f8f8 !important; /* Cor de Fundo Solicitada */\nheight: 35px !important; /* Altura do campo */\nborder: none !important;\nborder-image-width: 0px !important;\n--v-field-padding-start: 0px !important;\nfont-weight: bold !important;\n}\n\n.v-field__input {\n/* Centraliza o texto (valor digitado) HORIZONTALMENTE */\ntext-align: center !important;\n\n/* Cor do Texto (Escrita) */\ncolor: green !important; /* Cor Verde Solicitada */\n\n/* Garante o alinhamento de Altura */\nmin-height: 35px !important;\nheight: 35px !important;\nline-height: 35px !important; /* Ajuda na centralização vertical */\npadding-top: 0 !important;\npadding-bottom: 0 !important;\npadding-inline: 0 !important;\n}\n\n/* Esconde os containers dos botões de incremento/decremento */\n.v-field__append-inner,\n.v-field__prepend-inner {\ndisplay: none !important;\n}\n\n    /* SELETORES CRUCIAIS: Remove todas as linhas de desenho do Vuetify, incluindo a linha de foco. */\n    .v-field__outline,\n    .v-field__overlay,\n    .v-field__field::before,\n    .v-field__field::after,\n    .v-field__input::before,\n    .v-field__input::after {\n    border: none !important;\n    box-shadow: none !important;\n    opacity: 0 !important;\n    }\n\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 690,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11dc46e24ad78901",
+        "type": "ui-switch",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "label": "switch 01",
+        "group": "bb4b93493e8c275f",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "valor1",
+        "topicType": "str",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 680,
+        "y": 260,
+        "wires": [
+            [
+                "dba2c3cd113ae8d9"
+            ]
+        ]
+    },
+    {
+        "id": "f850878a35b79571",
+        "type": "ui-switch",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "label": "switch 02",
+        "group": "bb4b93493e8c275f",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "valor2",
+        "topicType": "str",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 680,
+        "y": 300,
+        "wires": [
+            [
+                "dba2c3cd113ae8d9"
+            ]
+        ]
+    },
+    {
+        "id": "b45c066b79e193cc",
+        "type": "ui-switch",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "label": "switch 03",
+        "group": "bb4b93493e8c275f",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "valor3",
+        "topicType": "str",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 680,
+        "y": 340,
+        "wires": [
+            [
+                "dba2c3cd113ae8d9"
+            ]
+        ]
+    },
+    {
+        "id": "08524322786cf71f",
+        "type": "ui-switch",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "label": "switch 04",
+        "group": "bb4b93493e8c275f",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "valor4",
+        "topicType": "str",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 680,
+        "y": 380,
+        "wires": [
+            [
+                "dba2c3cd113ae8d9"
+            ]
+        ]
+    },
+    {
+        "id": "cd9364dfcc83bd7a",
+        "type": "ui-text",
+        "z": "c53f29ac1342e358",
+        "group": "bb4b93493e8c275f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Chave 01",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payloads",
+        "valueType": "msg",
+        "x": 680,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "c0ecbdcb0984b75b",
+        "type": "ui-text",
+        "z": "c53f29ac1342e358",
+        "group": "bb4b93493e8c275f",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Chave 1 - 4",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payloads",
+        "valueType": "msg",
+        "x": 690,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "900367d02d565c94",
+        "type": "ui-number-input",
+        "z": "c53f29ac1342e358",
+        "group": "bb4b93493e8c275f",
+        "name": "Input Númerico 01",
+        "label": "",
+        "order": 9,
+        "width": "1",
+        "height": "1",
+        "topic": "payload",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "tooltip": "",
+        "passthru": false,
+        "sendOnBlur": false,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "spinner": "default",
+        "x": 710,
+        "y": 500,
+        "wires": [
+            [
+                "326969a83b34fbcc"
+            ]
+        ]
+    },
+    {
+        "id": "f1447f262274d479",
+        "type": "ui-text",
+        "z": "c53f29ac1342e358",
+        "group": "bb4b93493e8c275f",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Inteiro 1 - 4",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payloads",
+        "valueType": "msg",
+        "x": 690,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "2d12225601a7acef",
+        "type": "ui-number-input",
+        "z": "c53f29ac1342e358",
+        "group": "bb4b93493e8c275f",
+        "name": "Input Númerico 01",
+        "label": "",
+        "order": 11,
+        "width": "1",
+        "height": "1",
+        "topic": "valor1",
+        "topicType": "str",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "tooltip": "",
+        "passthru": false,
+        "sendOnBlur": false,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "spinner": "default",
+        "x": 710,
+        "y": 580,
+        "wires": [
+            [
+                "8edc303d5f5e082f"
+            ]
+        ]
+    },
+    {
+        "id": "321159884fe4b822",
+        "type": "ui-number-input",
+        "z": "c53f29ac1342e358",
+        "group": "bb4b93493e8c275f",
+        "name": "Input Númerico 02",
+        "label": "",
+        "order": 12,
+        "width": "1",
+        "height": "1",
+        "topic": "valor2",
+        "topicType": "str",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "tooltip": "",
+        "passthru": false,
+        "sendOnBlur": false,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "spinner": "default",
+        "x": 710,
+        "y": 620,
+        "wires": [
+            [
+                "8edc303d5f5e082f"
+            ]
+        ]
+    },
+    {
+        "id": "daacc54f04259989",
+        "type": "ui-number-input",
+        "z": "c53f29ac1342e358",
+        "group": "bb4b93493e8c275f",
+        "name": "Input Númerico 03",
+        "label": "",
+        "order": 13,
+        "width": "1",
+        "height": "1",
+        "topic": "valor3",
+        "topicType": "str",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "tooltip": "",
+        "passthru": false,
+        "sendOnBlur": false,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "spinner": "default",
+        "x": 710,
+        "y": 660,
+        "wires": [
+            [
+                "8edc303d5f5e082f"
+            ]
+        ]
+    },
+    {
+        "id": "8c8ac024df895b72",
+        "type": "ui-number-input",
+        "z": "c53f29ac1342e358",
+        "group": "bb4b93493e8c275f",
+        "name": "Input Númerico 04",
+        "label": "",
+        "order": 14,
+        "width": "1",
+        "height": "1",
+        "topic": "valor4",
+        "topicType": "str",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "tooltip": "",
+        "passthru": false,
+        "sendOnBlur": false,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "spinner": "default",
+        "x": 710,
+        "y": 700,
+        "wires": [
+            [
+                "8edc303d5f5e082f"
+            ]
+        ]
+    },
+    {
+        "id": "326969a83b34fbcc",
+        "type": "modbus-write",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "1",
+        "quantity": "1",
+        "server": "57c6ff18767caa8c",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 980,
+        "y": 500,
+        "wires": [
+            [],
+            [
+                "f175e17779b97244"
+            ]
+        ]
+    },
+    {
+        "id": "8edc303d5f5e082f",
+        "type": "function",
+        "z": "c53f29ac1342e358",
+        "name": "function array",
+        "func": "// Recupera valores armazenados no contexto\nlet v1 = context.get(\"v1\") || 0;\nlet v2 = context.get(\"v2\") || 0;\nlet v3 = context.get(\"v3\") || 0;\nlet v4 = context.get(\"v4\") || 0;\n\n// Atualiza conforme o topic recebido\nif (msg.topic === \"valor1\") {\n    v1 = Number(msg.payload);\n}\n\nif (msg.topic === \"valor2\") {\n    v2 = Number(msg.payload);\n}\n\nif (msg.topic === \"valor3\") {\n    v3 = Number(msg.payload);\n}\n\nif (msg.topic === \"valor4\") {\n    v4 = Number(msg.payload);\n}\n// Salva novamente no contexto\ncontext.set(\"v1\", v1);\ncontext.set(\"v2\", v2);\ncontext.set(\"v3\", v3);\ncontext.set(\"v4\", v4);\n// Monta o array com duas posições\nmsg.payload = [v1, v2, v3, v4];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 580,
+        "wires": [
+            [
+                "6f4e737c9a6e87c2"
+            ]
+        ]
+    },
+    {
+        "id": "6f4e737c9a6e87c2",
+        "type": "modbus-write",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "MHoldingRegisters",
+        "adr": "2",
+        "quantity": "4",
+        "server": "57c6ff18767caa8c",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 980,
+        "y": 660,
+        "wires": [
+            [
+                "902c746416fd247d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "902c746416fd247d",
+        "type": "debug",
+        "z": "c53f29ac1342e358",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload.value",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "921c57c7579b4ef7",
+        "type": "modbus-write",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "MHoldingRegisters",
+        "adr": "6",
+        "quantity": "1",
+        "server": "57c6ff18767caa8c",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 980,
+        "y": 200,
+        "wires": [
+            [],
+            [
+                "445871552ab11621"
+            ]
+        ]
+    },
+    {
+        "id": "b018d17b2a28fb78",
+        "type": "modbus-write",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "MHoldingRegisters",
+        "adr": "7",
+        "quantity": "4",
+        "server": "57c6ff18767caa8c",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 980,
+        "y": 320,
+        "wires": [
+            [
+                "cddd9718df4af781"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dba2c3cd113ae8d9",
+        "type": "function",
+        "z": "c53f29ac1342e358",
+        "name": "function array",
+        "func": "// Recupera valores armazenados no contexto\nlet v1 = context.get(\"v1\") || false;\nlet v2 = context.get(\"v2\") || false;\nlet v3 = context.get(\"v3\") || false;\nlet v4 = context.get(\"v4\") || false;\n\n// Atualiza conforme o topic recebido\nif (msg.topic === \"valor1\") {\n    v1 = msg.payload;\n}\n\nif (msg.topic === \"valor2\") {\n    v2 = msg.payload;\n}\n\nif (msg.topic === \"valor3\") {\n    v3 = msg.payload;\n}\n\nif (msg.topic === \"valor4\") {\n    v4 = msg.payload;\n}\n// Salva novamente no contexto\ncontext.set(\"v1\", v1);\ncontext.set(\"v2\", v2);\ncontext.set(\"v3\", v3);\ncontext.set(\"v4\", v4);\n// Monta o array com duas posições\nmsg.payload = [v1, v2, v3, v4];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 260,
+        "wires": [
+            [
+                "b018d17b2a28fb78"
+            ]
+        ]
+    },
+    {
+        "id": "cddd9718df4af781",
+        "type": "debug",
+        "z": "c53f29ac1342e358",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload.value",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "445871552ab11621",
+        "type": "debug",
+        "z": "c53f29ac1342e358",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f175e17779b97244",
+        "type": "debug",
+        "z": "c53f29ac1342e358",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "fd71f2b781559383",
+        "type": "ui-switch",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "label": "switch 01",
+        "group": "bb4b93493e8c275f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 680,
+        "y": 180,
+        "wires": [
+            [
+                "8d8f1cbc62cc6ec6"
+            ]
+        ]
+    },
+    {
+        "id": "8d8f1cbc62cc6ec6",
+        "type": "function",
+        "z": "c53f29ac1342e358",
+        "name": "function array",
+        "func": "msg.payload = [msg.payload === true ? 1 : 0];\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 140,
+        "wires": [
+            [
+                "921c57c7579b4ef7"
+            ]
+        ]
+    },
+    {
+        "id": "f1d40392651c9d2f",
+        "type": "modbus-read",
+        "z": "c53f29ac1342e358",
+        "name": "Modbus Read Adress 01",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "1",
+        "quantity": "1",
+        "rate": "2",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "server": "57c6ff18767caa8c",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 250,
+        "y": 500,
+        "wires": [
+            [
+                "900367d02d565c94"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b4bc32401edbc2de",
+        "type": "modbus-read",
+        "z": "c53f29ac1342e358",
+        "name": "Modbus Read Adress 02 - 05",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "2",
+        "quantity": "4",
+        "rate": "2",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "server": "57c6ff18767caa8c",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 240,
+        "y": 640,
+        "wires": [
+            [
+                "2af107dffd618d35"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9e4c652e08b691b3",
+        "type": "function",
+        "z": "c53f29ac1342e358",
+        "name": "function array",
+        "func": "// O Modbus Read sempre retorna um Array, ex: [1] ou [0]\n// Pegamos a primeira posição do array\nlet valorLido = msg.payload[0];\n\n// Converte para Booleano: 1 vira true, 0 vira false\nmsg.payload = (valorLido === 1 || valorLido === true);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 180,
+        "wires": [
+            [
+                "fd71f2b781559383"
+            ]
+        ]
+    },
+    {
+        "id": "a6df3cd1f87115d1",
+        "type": "modbus-read",
+        "z": "c53f29ac1342e358",
+        "name": "Modbus Read Adress 06",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "6",
+        "quantity": "1",
+        "rate": "2",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "server": "57c6ff18767caa8c",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "9e4c652e08b691b3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "745f8295cbde9756",
+        "type": "function",
+        "z": "c53f29ac1342e358",
+        "name": "function array",
+        "func": "// O payload chega como um array, ex: [1, 0, 1, 1]\nlet bloco = msg.payload;\n\n// Criamos mensagens individuais para cada saída\nlet msg1 = { payload: bloco[0] === 1 }; // Endereço 2 -> Chave 1\nlet msg2 = { payload: bloco[1] === 1 }; // Endereço 3 -> Chave 2\nlet msg3 = { payload: bloco[2] === 1 }; // Endereço 4 -> Chave 3\nlet msg4 = { payload: bloco[3] === 1 }; // Endereço 5 -> Chave 4\n\n// Retorna as mensagens na ordem das saídas\nreturn [msg1, msg2, msg3, msg4];\n",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 320,
+        "wires": [
+            [
+                "11dc46e24ad78901"
+            ],
+            [
+                "f850878a35b79571"
+            ],
+            [
+                "b45c066b79e193cc"
+            ],
+            [
+                "08524322786cf71f"
+            ]
+        ]
+    },
+    {
+        "id": "320057ade2198dbf",
+        "type": "modbus-read",
+        "z": "c53f29ac1342e358",
+        "name": "Modbus Read Adress 07 - 10",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "7",
+        "quantity": "4",
+        "rate": "2",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "server": "57c6ff18767caa8c",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 240,
+        "y": 320,
+        "wires": [
+            [
+                "745f8295cbde9756"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2af107dffd618d35",
+        "type": "function",
+        "z": "c53f29ac1342e358",
+        "name": "function array",
+        "func": "// O Modbus Read retorna um array, ex: [123, 450, 20, 500]\nlet bloco = msg.payload;\n\n// Criamos objetos de mensagem independentes para cada saída\n// Usamos o índice do array correspondente ao endereço lido\nlet msg1 = { payload: Number(bloco[0]) }; // Valor do primeiro endereço lido\nlet msg2 = { payload: Number(bloco[1]) }; // Valor do segundo endereço\nlet msg3 = { payload: Number(bloco[2]) }; // Valor do terceiro\nlet msg4 = { payload: Number(bloco[3]) }; // Valor do quarto\n\n// Retorna as mensagens na ordem das saídas da função\nreturn [msg1, msg2, msg3, msg4];\n",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 640,
+        "wires": [
+            [
+                "2d12225601a7acef"
+            ],
+            [
+                "321159884fe4b822"
+            ],
+            [
+                "daacc54f04259989"
+            ],
+            [
+                "8c8ac024df895b72"
+            ]
+        ]
+    },
+    {
+        "id": "70fda651b46ae37a",
+        "type": "ui-text",
+        "z": "c53f29ac1342e358",
+        "group": "bb4b93493e8c275f",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Inteiro 01",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payloads",
+        "valueType": "msg",
+        "x": 680,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "7a8f09b6d7d42f5e",
+        "type": "modbustcp-read",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "topic": "",
+        "dataType": "InputRegister",
+        "adr": "10",
+        "quantity": "1",
+        "rate": "2",
+        "rateUnit": "s",
+        "server": "65c14276d9a0153d",
+        "ieeeType": "off",
+        "ieeeBE": true,
+        "x": 170,
+        "y": 820,
+        "wires": [
+            [
+                "afe4f86d10118e15"
+            ]
+        ]
+    },
+    {
+        "id": "afe4f86d10118e15",
+        "type": "debug",
+        "z": "c53f29ac1342e358",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "58f1306e93d85741",
+        "type": "modbustcp-write",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "topic": "",
+        "dataType": "HoldingRegister",
+        "adr": "11",
+        "server": "65c14276d9a0153d",
+        "x": 690,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "d841aedfc9d3e580",
+        "type": "inject",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "7",
+        "payloadType": "num",
+        "x": 170,
+        "y": 880,
+        "wires": [
+            [
+                "58f1306e93d85741"
+            ]
+        ]
+    },
+    {
+        "id": "1a593e5cbc66161f",
+        "type": "comment",
+        "z": "c53f29ac1342e358",
+        "name": "Modbus Server Weintek",
+        "info": "",
+        "x": 200,
+        "y": 760,
+        "wires": []
+    }
+]
