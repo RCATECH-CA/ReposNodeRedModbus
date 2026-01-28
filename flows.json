@@ -2177,7 +2177,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "/* Input Numérico Customizado: #nrdb-ui-widget-920ae39f721a0ac5 */\n#nrdb-ui-widget-920ae39f721a0ac5, #nrdb-ui-widget-900367d02d565c94, #nrdb-ui-widget-2d12225601a7acef, #nrdb-ui-widget-321159884fe4b822, #nrdb-ui-widget-daacc54f04259989, #nrdb-ui-widget-8c8ac024df895b72  {\n\n/* Remove a borda e cor de fundo padrão, aplica a cor de fundo F8F8F8 */\n.v-field {\nbackground-color: #f8f8f8 !important; /* Cor de Fundo Solicitada */\nheight: 35px !important; /* Altura do campo */\nborder: none !important;\nborder-image-width: 0px !important;\n--v-field-padding-start: 0px !important;\nfont-weight: bold !important;\n}\n\n.v-field__input {\n/* Centraliza o texto (valor digitado) HORIZONTALMENTE */\ntext-align: center !important;\n\n/* Cor do Texto (Escrita) */\ncolor: green !important; /* Cor Verde Solicitada */\n\n/* Garante o alinhamento de Altura */\nmin-height: 35px !important;\nheight: 35px !important;\nline-height: 35px !important; /* Ajuda na centralização vertical */\npadding-top: 0 !important;\npadding-bottom: 0 !important;\npadding-inline: 0 !important;\n}\n\n/* Esconde os containers dos botões de incremento/decremento */\n.v-field__append-inner,\n.v-field__prepend-inner {\ndisplay: none !important;\n}\n\n    /* SELETORES CRUCIAIS: Remove todas as linhas de desenho do Vuetify, incluindo a linha de foco. */\n    .v-field__outline,\n    .v-field__overlay,\n    .v-field__field::before,\n    .v-field__field::after,\n    .v-field__input::before,\n    .v-field__input::after {\n    border: none !important;\n    box-shadow: none !important;\n    opacity: 0 !important;\n    }\n\n}",
+        "format": "/* Input Numérico Customizado: #nrdb-ui-widget-920ae39f721a0ac5 */\n#nrdb-ui-widget-920ae39f721a0ac5, #nrdb-ui-widget-900367d02d565c94, #nrdb-ui-widget-2d12225601a7acef, #nrdb-ui-widget-321159884fe4b822, #nrdb-ui-widget-daacc54f04259989, #nrdb-ui-widget-8c8ac024df895b72, #nrdb-ui-widget-5b8379d697cf09a1, #nrdb-ui-widget-f4a562745d1ecc7f  {\n\n/* Remove a borda e cor de fundo padrão, aplica a cor de fundo F8F8F8 */\n.v-field {\nbackground-color: #f8f8f8 !important; /* Cor de Fundo Solicitada */\nheight: 35px !important; /* Altura do campo */\nborder: none !important;\nborder-image-width: 0px !important;\n--v-field-padding-start: 0px !important;\nfont-weight: bold !important;\n}\n\n.v-field__input {\n/* Centraliza o texto (valor digitado) HORIZONTALMENTE */\ntext-align: center !important;\n\n/* Cor do Texto (Escrita) */\ncolor: green !important; /* Cor Verde Solicitada */\n\n/* Garante o alinhamento de Altura */\nmin-height: 35px !important;\nheight: 35px !important;\nline-height: 35px !important; /* Ajuda na centralização vertical */\npadding-top: 0 !important;\npadding-bottom: 0 !important;\npadding-inline: 0 !important;\n}\n\n/* Esconde os containers dos botões de incremento/decremento */\n.v-field__append-inner,\n.v-field__prepend-inner {\ndisplay: none !important;\n}\n\n    /* SELETORES CRUCIAIS: Remove todas as linhas de desenho do Vuetify, incluindo a linha de foco. */\n    .v-field__outline,\n    .v-field__overlay,\n    .v-field__field::before,\n    .v-field__field::after,\n    .v-field__input::before,\n    .v-field__input::after {\n    border: none !important;\n    box-shadow: none !important;\n    opacity: 0 !important;\n    }\n\n}",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -3071,16 +3071,17 @@
         "dataType": "HoldingRegister",
         "adr": "0",
         "quantity": "1",
-        "rate": "2",
-        "rateUnit": "s",
+        "rate": "500",
+        "rateUnit": "ms",
         "server": "65c14276d9a0153d",
         "ieeeType": "off",
         "ieeeBE": true,
         "x": 170,
-        "y": 820,
+        "y": 800,
         "wires": [
             [
-                "afe4f86d10118e15"
+                "afe4f86d10118e15",
+                "24de0b5fd30f5d09"
             ]
         ]
     },
@@ -3093,10 +3094,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
+        "x": 360,
         "y": 820,
         "wires": []
     },
@@ -3110,7 +3112,7 @@
         "adr": "11",
         "server": "65c14276d9a0153d",
         "x": 690,
-        "y": 880,
+        "y": 1020,
         "wires": []
     },
     {
@@ -3131,7 +3133,7 @@
         "payload": "7",
         "payloadType": "num",
         "x": 170,
-        "y": 880,
+        "y": 1020,
         "wires": [
             [
                 "58f1306e93d85741"
@@ -3157,5 +3159,146 @@
         "x": 230,
         "y": 120,
         "wires": []
+    },
+    {
+        "id": "80d8af7fb749260f",
+        "type": "modbustcp-read",
+        "z": "c53f29ac1342e358",
+        "name": "",
+        "topic": "",
+        "dataType": "HoldingRegister",
+        "adr": "1",
+        "quantity": "1",
+        "rate": "500",
+        "rateUnit": "ms",
+        "server": "65c14276d9a0153d",
+        "ieeeType": "off",
+        "ieeeBE": true,
+        "x": 170,
+        "y": 880,
+        "wires": [
+            [
+                "7d52d4dd1b180699",
+                "5b09fbc71b48e3d3"
+            ]
+        ]
+    },
+    {
+        "id": "7d52d4dd1b180699",
+        "type": "debug",
+        "z": "c53f29ac1342e358",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "24de0b5fd30f5d09",
+        "type": "function",
+        "z": "c53f29ac1342e358",
+        "name": "function array",
+        "func": "// O Modbus Read retorna um array, ex: [123, 450, 20, 500]\nlet bloco = msg.payload;\n\n// Criamos objetos de mensagem independentes para cada saída\n// Usamos o índice do array correspondente ao endereço lido\nlet msg1 = { payload: Number(bloco[0]) }; // Valor do primeiro endereço lido\n\n// Retorna as mensagens na ordem das saídas da função\nreturn [msg1];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 760,
+        "wires": [
+            [
+                "5b8379d697cf09a1"
+            ]
+        ]
+    },
+    {
+        "id": "5b8379d697cf09a1",
+        "type": "ui-number-input",
+        "z": "c53f29ac1342e358",
+        "group": "e32cfda79a6aafa2",
+        "name": "Modbus 0",
+        "label": "",
+        "order": 11,
+        "width": "1",
+        "height": "1",
+        "topic": "valor1",
+        "topicType": "str",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "tooltip": "",
+        "passthru": false,
+        "sendOnBlur": false,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "spinner": "default",
+        "x": 680,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b09fbc71b48e3d3",
+        "type": "function",
+        "z": "c53f29ac1342e358",
+        "name": "function array",
+        "func": "// O Modbus Read retorna um array, ex: [123, 450, 20, 500]\nlet bloco = msg.payload;\n\n// Criamos objetos de mensagem independentes para cada saída\n// Usamos o índice do array correspondente ao endereço lido\nlet msg1 = { payload: Number(bloco[0]) }; // Valor do primeiro endereço lido\n\n// Retorna as mensagens na ordem das saídas da função\nreturn [msg1];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 920,
+        "wires": [
+            [
+                "f4a562745d1ecc7f"
+            ]
+        ]
+    },
+    {
+        "id": "f4a562745d1ecc7f",
+        "type": "ui-number-input",
+        "z": "c53f29ac1342e358",
+        "group": "e32cfda79a6aafa2",
+        "name": "Modbus 1",
+        "label": "",
+        "order": 11,
+        "width": "1",
+        "height": "1",
+        "topic": "valor1",
+        "topicType": "str",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "tooltip": "",
+        "passthru": false,
+        "sendOnBlur": false,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "spinner": "default",
+        "x": 680,
+        "y": 920,
+        "wires": [
+            []
+        ]
     }
 ]
