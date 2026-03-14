@@ -42,7 +42,7 @@
     {
         "id": "ce71a40f58e8877b",
         "type": "tab",
-        "label": "Fluxo 1",
+        "label": "PDFBuilder",
         "disabled": false,
         "info": "",
         "env": []
@@ -3529,7 +3529,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 950,
-        "y": 740,
+        "y": 700,
         "wires": [
             []
         ]
@@ -3544,7 +3544,7 @@
         "options": "{}",
         "outputProperty": "payload",
         "x": 760,
-        "y": 740,
+        "y": 700,
         "wires": [
             [
                 "99a2c162dbdd04f2"
@@ -3564,7 +3564,7 @@
         "finalize": "",
         "libs": [],
         "x": 560,
-        "y": 740,
+        "y": 700,
         "wires": [
             [
                 "a723f5ba7834c3c8"
@@ -3593,7 +3593,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 340,
-        "y": 740,
+        "y": 700,
         "wires": [
             [
                 "86f13a9e41a114b2"
@@ -3612,7 +3612,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 950,
-        "y": 820,
+        "y": 780,
         "wires": [
             []
         ]
@@ -3627,7 +3627,7 @@
         "options": "{}",
         "outputProperty": "payload",
         "x": 760,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "ada4408845a0b11b"
@@ -3647,7 +3647,7 @@
         "finalize": "",
         "libs": [],
         "x": 560,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "cd80ad821ab89241"
@@ -3676,7 +3676,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 340,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "e69534da10e87a32"
@@ -3935,33 +3935,6 @@
         ]
     },
     {
-        "id": "b0102f4a02cd84f6",
-        "type": "ui-table",
-        "z": "ce71a40f58e8877b",
-        "group": "21e434cf4ee01898",
-        "name": "",
-        "label": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "maxrows": 0,
-        "passthru": false,
-        "autocols": true,
-        "showSearch": true,
-        "deselect": true,
-        "selectionType": "none",
-        "columns": [],
-        "mobileBreakpoint": "sm",
-        "mobileBreakpointType": "defaults",
-        "action": "append",
-        "className": "",
-        "x": 750,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "6fa9b60bf87298b5",
         "type": "http in",
         "z": "ce71a40f58e8877b",
@@ -4049,8 +4022,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 320,
-        "y": 480,
+        "x": 420,
+        "y": 500,
         "wires": [
             [
                 "ecde103aaf1b3dd1"
@@ -4069,8 +4042,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 490,
-        "y": 480,
+        "x": 590,
+        "y": 500,
         "wires": [
             [
                 "22979f2df931cb77"
@@ -4089,8 +4062,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 480,
+        "x": 780,
+        "y": 500,
         "wires": [
             [
                 "7fadcbf40f3998df"
@@ -4104,8 +4077,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 870,
-        "y": 480,
+        "x": 970,
+        "y": 500,
         "wires": []
     },
     {
@@ -4114,8 +4087,8 @@
         "z": "ce71a40f58e8877b",
         "name": "http",
         "info": "http://[IP_DO_SEU_X20EDGE]:1880/abrir-pdf",
-        "x": 190,
-        "y": 480,
+        "x": 290,
+        "y": 500,
         "wires": []
     },
     {
@@ -4129,7 +4102,6 @@
         "wires": [
             [
                 "e86235be796258a5",
-                "b0102f4a02cd84f6",
                 "87bfe4a2288eda34"
             ]
         ]
