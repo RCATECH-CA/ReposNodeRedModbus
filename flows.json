@@ -32,6 +32,22 @@
         "env": []
     },
     {
+        "id": "ae6d75f0a1c3a286",
+        "type": "tab",
+        "label": "MYSQL",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ce71a40f58e8877b",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "359fdeb420e9b9b7",
         "type": "ui-base",
         "name": "button",
@@ -180,8 +196,8 @@
         ],
         "order": 3,
         "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "496bad1d955bbd04",
@@ -875,11 +891,62 @@
     {
         "id": "65c14276d9a0153d",
         "type": "modbustcp-server",
+        "d": true,
         "name": "Server",
         "host": "192.168.0.111",
         "port": "502",
         "unit_id": 1,
         "reconnecttimeout": ""
+    },
+    {
+        "id": "88fd8878f39950c9",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "192.168.0.102",
+        "port": "3306",
+        "db": "mydb",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "d2a41bfe3e3cad3b",
+        "type": "MySQLdatabase",
+        "name": "teste",
+        "host": "192.168.0.102",
+        "port": "3306",
+        "db": "mydb",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "6c2ed50c62f6849d",
+        "type": "ui-group",
+        "name": "Group Name",
+        "page": "85c0a43fe9b7f435",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1ae6d7f7fdb60191",
+        "type": "sqlitedb",
+        "db": "productiondata.sqlite",
+        "mode": "RWC"
+    },
+    {
+        "id": "9b3d22dadb6d9d6c",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "mydb",
+        "tz": "",
+        "charset": "UTF8"
     },
     {
         "id": "b7c88782747a9e57",
@@ -3164,7 +3231,7 @@
         "name": "Modbus Server Weintek",
         "info": "",
         "x": 200,
-        "y": 760,
+        "y": 740,
         "wires": []
     },
     {
@@ -3243,7 +3310,7 @@
         "group": "e32cfda79a6aafa2",
         "name": "Modbus 0",
         "label": "",
-        "order": 11,
+        "order": 1,
         "width": "1",
         "height": "1",
         "topic": "valor1",
@@ -3294,7 +3361,7 @@
         "group": "e32cfda79a6aafa2",
         "name": "Modbus 1",
         "label": "",
-        "order": 11,
+        "order": 2,
         "width": "1",
         "height": "1",
         "topic": "valor1",
@@ -3316,6 +3383,755 @@
         "y": 920,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "32f6c885943f7d4e",
+        "type": "mysql",
+        "z": "ae6d75f0a1c3a286",
+        "mydb": "88fd8878f39950c9",
+        "name": "",
+        "x": 610,
+        "y": 160,
+        "wires": [
+            [
+                "aebea5ccf8503526"
+            ]
+        ]
+    },
+    {
+        "id": "aa04930138e4fb21",
+        "type": "inject",
+        "z": "ae6d75f0a1c3a286",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM sensor WHERE idsensor = 1",
+        "x": 290,
+        "y": 160,
+        "wires": [
+            [
+                "32f6c885943f7d4e"
+            ]
+        ]
+    },
+    {
+        "id": "aebea5ccf8503526",
+        "type": "debug",
+        "z": "ae6d75f0a1c3a286",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "afc4f1eea194d72f",
+        "type": "mysql",
+        "z": "ae6d75f0a1c3a286",
+        "mydb": "d2a41bfe3e3cad3b",
+        "name": "",
+        "x": 610,
+        "y": 220,
+        "wires": [
+            [
+                "156a7e2eb2b1ba3b"
+            ]
+        ]
+    },
+    {
+        "id": "d8a39967a2c46f4d",
+        "type": "inject",
+        "z": "ae6d75f0a1c3a286",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "select * from sensor",
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "afc4f1eea194d72f"
+            ]
+        ]
+    },
+    {
+        "id": "156a7e2eb2b1ba3b",
+        "type": "debug",
+        "z": "ae6d75f0a1c3a286",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "40fa648d976827d1",
+        "type": "inject",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "select * from sensor",
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "9db458103603788e"
+            ]
+        ]
+    },
+    {
+        "id": "99a2c162dbdd04f2",
+        "type": "file",
+        "z": "ce71a40f58e8877b",
+        "name": "teste",
+        "filename": ".node-red/teste.pdf",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 950,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a723f5ba7834c3c8",
+        "type": "pdfbuilder",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "outputType": "Buffer",
+        "inputProperty": "payload",
+        "options": "{}",
+        "outputProperty": "payload",
+        "x": 760,
+        "y": 740,
+        "wires": [
+            [
+                "99a2c162dbdd04f2"
+            ]
+        ]
+    },
+    {
+        "id": "86f13a9e41a114b2",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "function 2",
+        "func": "var dd = {\n\t\"content\": [\n\t\t\"First paragraph\",\n\t\t\"Another paragraph, this time a little bit longer to make sure, this line will be divided into at least two lines\"\n\t]\n}\nnode.send({payload: dd});\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 740,
+        "wires": [
+            [
+                "a723f5ba7834c3c8"
+            ]
+        ]
+    },
+    {
+        "id": "007190d632bed471",
+        "type": "inject",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 740,
+        "wires": [
+            [
+                "86f13a9e41a114b2"
+            ]
+        ]
+    },
+    {
+        "id": "ada4408845a0b11b",
+        "type": "file",
+        "z": "ce71a40f58e8877b",
+        "name": "teste",
+        "filename": ".node-red/teste2.pdf",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 950,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd80ad821ab89241",
+        "type": "pdfbuilder",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "outputType": "Buffer",
+        "inputProperty": "payload",
+        "options": "{}",
+        "outputProperty": "payload",
+        "x": 760,
+        "y": 820,
+        "wires": [
+            [
+                "ada4408845a0b11b"
+            ]
+        ]
+    },
+    {
+        "id": "e69534da10e87a32",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "function 3",
+        "func": "var docDefinition = {\n  content: [\n    {\n      layout: 'lightHorizontalLines', // optional\n      table: {\n        // headers are automatically repeated if the table spans over multiple pages\n        // you can declare how many rows should be treated as headers\n        headerRows: 1,\n        widths: [ '*', 'auto', 100, '*' ],\n\n        body: [\n          [ 'First', 'Second', 'Third', 'The last one' ],\n          [ 'Value 1', 'Value 2', 'Value 3', 'Value 4' ],\n          [ { text: 'Bold value', bold: true }, 'Val 2', 'Val 3', 'Val 4' ]\n        ]\n      }\n    }\n  ]\n};\nnode.send({payload: docDefinition});",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 820,
+        "wires": [
+            [
+                "cd80ad821ab89241"
+            ]
+        ]
+    },
+    {
+        "id": "c7c77c7288e86713",
+        "type": "inject",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 820,
+        "wires": [
+            [
+                "e69534da10e87a32"
+            ]
+        ]
+    },
+    {
+        "id": "7b0e29f70b1eb471",
+        "type": "file",
+        "z": "ce71a40f58e8877b",
+        "name": "Write PDF",
+        "filename": "/home/admin/.node-red/teste3.pdf",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 990,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c5e9f625b6b3206",
+        "type": "pdfbuilder",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "outputType": "Buffer",
+        "inputProperty": "payload",
+        "options": "{}",
+        "outputProperty": "payload",
+        "x": 760,
+        "y": 260,
+        "wires": [
+            [
+                "7b0e29f70b1eb471"
+            ]
+        ]
+    },
+    {
+        "id": "87bfe4a2288eda34",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "function 4",
+        "func": "// Converta sua imagem para Base64 (existem sites que fazem isso)\nconst logoBase64 = \"data:image/png;base64,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\"; \nvar bloco = msg.payload;\nvar tamanho = msg.payload.length;\n\n// Definimos o cabeçalho (a primeira linha da tabela)\nlet tableBody = [\n    [\n        { text: 'Data/Hora', style: 'tableHeader' },\n        { text: 'Sensor', style: 'tableHeader' },\n        { text: 'Temp (°C)', style: 'tableHeader' },\n        { text: 'Hum (%)', style: 'tableHeader' }\n    ]\n];\n\nfor (let cont = 0; cont < tamanho; cont++) {\n    let linha = [\n        String(bloco[cont].data_formatada),\n       // bloco[cont].dataMedicao,\n        bloco[cont].serial,\n        bloco[cont].valorTemp,\n        bloco[cont].valorHumi\n    ]; \n    // Adicionamos a linha preenchida ao corpo da tabela\n    tableBody.push(linha); \n}\n\nmsg.payload = {\n    content: [\n        // 1. Cabeçalho com Logo e Título\n        {\n            columns: [\n                { text: 'RELATÓRIO DE MONITORAMENTO', style: 'header', alignment: 'left' },\n                { image: logoBase64, width: 110 }\n            ]\n        },\n        { text: '__________________________________________________________________________________________________________________', margin: [0, 5, 0, 5] },\n        \n        // 2. Tabela de Dados\n        {\n            table: {\n                headerRows: 1,\n                //widths: ['*', '*', 'auto', 'auto'],\n                widths: ['*', '*', '*', '*'],\n                body: tableBody\n            },\n            layout: 'lightHorizontalLines' // Estilo visual da tabela\n        }\n    ],\n    \n    // 3. Rodapé Fixo\n    footer: function(currentPage, pageCount) { \n        return { \n            text: 'Página ' + currentPage.toString() + ' de ' + pageCount, \n            alignment: 'center', \n            style: 'footerStyle' \n        }; \n    },\n\n    // 4. Estilização\n    styles: {\n        header: { fontSize: 18, bold: true },\n        tableHeader: { bold: true, fontSize: 11, color: 'black', fillColor: '#eeeeee' },\n        footerStyle: { fontSize: 8, italics: true }\n    },\n    defaultStyle: { fontSize: 10 }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 260,
+        "wires": [
+            [
+                "9c5e9f625b6b3206"
+            ]
+        ]
+    },
+    {
+        "id": "1e9283ad415f97ec",
+        "type": "inject",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 260,
+        "wires": [
+            [
+                "87bfe4a2288eda34"
+            ]
+        ]
+    },
+    {
+        "id": "e86235be796258a5",
+        "type": "debug",
+        "z": "ce71a40f58e8877b",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "0837bf1c2062e258",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "function 5",
+        "func": "// Converta sua imagem para Base64 (existem sites que fazem isso)\nconst logoBase64 = \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAvQAAAB/CAYAAACANFYkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABz7SURBVHhe7d0LVFV19sBx0UyFwCd/w/AVUs5Uis2Yofj3/YbE0LGkzLHyHStNHUlRUZRSM8Nnoi51wr9olooKKSopimajpPVPRQUVZSbSSkLz1f2f7X/PrDIxgXsu9/H9rHUWd+9bS+7lnHv3OWf/fr9yAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADA+tz0p9OwWCwV+/fvv2Tnzp3tNYW7qFy58k/NmjU7VL9+/dNt2rTZ1bx58/0PPvjgN/q0XTH+tlX+N/9043+cP97+6/zTfzrxXW6TH69dqapP4y7qeNbKntN+aJinp2e+phxKfn6+T2ho6NrTp0/X15TV9O7d+8N33313lJubm0VTAAA4FKcr6C9cuOAVHByckpGREagpFFONGjUu9u3bN/GNN96Y7efnd7IsC518i8Vz99Hdz605kjb85PfnHv/ZYqmgT6EYantUO7v42b+19HWvmasph2GcyLkZ++Ks2bNnj9KUVXl4eBSuX78+tFOnTqmaAgDAoZTXn8B/XLx4scbChQuHPvLII8eaNWt28JNPPukkRZU+bRNnf/jGP3Jb/KrgJcPzp+36YHHWd7lNKeZd0969e59esmTJKxpaXWFhoceECRNivv/+++qaAgDAoVDQo0g///xz+czMzIAuXbpslcLe0FSfMk3ed981GJf6/upnE6O+3nrqwPM3fr5RSZ+CCzJOJN0nT54cfenSJS9NmeLAgQPN582bN1xDAAAcCgU97okU9kFBQXujo6MnGkXW/Zq2GrkDkHrqQO/n10cf3HbyH325Gg+xcuXKPmlpaW01NI2cvL733nsRhw4dCtAUAAAOg4Ie9+zy5cvukyZNiu7evfvH586dq6XpUpOrsNN3JywYt21JYsG1y7Q94BYZCBsbGzvu+vXrFTVlKuPf85Z/z4wTVgAAzERBj2JLTk7u3qFDh93Hjh1rrKkSk77l15PnJX709a4hlnIW9kfcIndsjOJ69NGjR0u9jxXHhg0bQtesWROqIQAADoECCiUihVaXLl2Sjxw50kRTxSbF/Btp8RvTzx4J1hRwy759+55avnz5AA1t5urVq5WME4nIvLw8b00BAGD3KOhRYjk5OQ1CQ0M/ysrK8tPUPZPpKKft/5/4zH9lBWkKuEVaXqZPnz5eZlvSlE3JeJFFixYxQBYA4DAo6FEqJ0+e9IuOjp5cnL5jaaf46OCmUTtzMntpCviPhISE3ikpKV01LBMLFiwYxgBZAICjoKBHqSUmJvZduXLl8xr+rvQzX/RYdjA5kp553E4GwsbExETZaiBsURggCwBwJBRUKDUpvqT4kWJMU0UqKCjwXnAgaSrzy+N2cudm7ty5Q209ELYoMkA2KSmps4YAANgtCnpYhRRhy5Yte0HDIm0/dzg460JuiQfSwnllZmY2Xbhw4RANy5wMkJ04ceJUBsgCAOwdBT2sJjEx8bm7LZ9vsVjcNx/P6E+rDW4nrS16l8euiufDhw83Wbp06WANAQCwSxRWsJqvv/76D5999tmTGv7GkW9OND327Zkin4frktYWaXHR0G7ICrLz588fZo01FwAAMAsFPazmypUrVXbt2tVOw984dSHvscLrP3lpCNwiLS3S2iItLpqyK8bv5xMdHR1lsVjKdKAuAABFcdOfTuPChQtewcHBKRkZGYGaspqqVav+4OnpWaCh3bt27dr93377bS25yqgp0/Xo0WPzpk2berm5uV3X1H/EpK2I//jYnlc0tKnybm43a1Tx+kZ+asql1PGslT2n/dAwY//N15TdiImJmWAU9NG23E+Ly8PDo3D9+vWhnTp1StWUXVi7dm0fwxoNUQyBgYEZxmdV15o1a17S1C28pyVX1HtaHNJ+t2vXrqc/+OCDF1JTUzucP3/+IXs92Teb2fuol5fXpeTk5K6tWrXK0JTdktcrr1vDErPGPmqvKOiLYdKkSdEy57qGDkE+HHfs2BE0duzYGYcOHWpmdtF0t4Nl7Lb312w/9Y9SH5D3yr1ipYJu/k9/8GKTTrN9vbxPGicZFn0KdkJaWdq2bbtDroJrym7Z4xcBxWfJmV0suaLSHCM5OTkN33777TFSyBcUFHhq2qWZvY9S0DsXWm6cnFHEXuvQocOOzz//vEVcXFyEu7v7ZX3KFLm5ub5Xrlz5TVuNtCv8dOOau4amcivn9nPwI4HLN/51Sr03W4cPq1v1v05QzNsf2SeklcURinmxf//+FitWrHhZQwBWkJ2d3SAkJGSjn59f1sKFC4dSzAMlQ0HvIoyC9uaIESPmx8fHD6pUqdJVTdvMxXIXqxT8VGj6Uv73lb/v6tjWz4+Y3HbAwOpu1b/XNOxQampqmw0bNvTU0O7J3S05KT5x4kQjTQEoIeOE3s0o4Ac/9thjXyUlJYXcvHmzgj4FoAQo6F1Mv379Vr300ksrNHQqcmV+4JPdYvv8oc0irsjbN2mNmzhx4pTCwkIPTTmEnJycBjNmzBgjxYimABSTcfy4Dxs2bMHw4cMXXL582SZ3bgFnR0HvYqTQNT5IF9WoUeOippxGUL0nNg96MjiWYt7+SeuKtLBo6FBWr1793KeffhqkIYBikLVKgoODE2UROXseCA84Gg4mF9S0adOjAQEBhzR0ClUrP5A/7E+hE41i/pqmYKekZUVaVxz1y/zSpUte06ZNk2ksubIIFIMU8+Hh4Ss3b94crCkAVkJB74KMovdKy5Yt92noFP67/hNJ/t4PfaEh7JS0qkjLirSuaMohbd++vUN8fHy4hgB+hxz7Y8eOfYtiHjAHBb2Lqlmz5rf60OFVvu/+wu6PBq2k1cb+SauKtKxo6LDk7sLs2bNH5efnO8QMPUBZW7NmTZ8VK1a8pCEAK6Ogd1G+vr7n9KHDe6SG72G/B2s4VQuRM5IWFWlVkZYVTZlCFoFq27ZtmoamOXr0aOPY2NjRcuVRUwDuQFaDNo6VSFddIAqwBQp6F/XDDz9U1YcOz/uB6rk13ZxvkQhnIy0q0qqioWn69Onz4cqVK8MDAgIyNWWa5cuXD9i3b99TGgK4g+Tk5ODDhw830RCACSjoXdTZs2d99aHDq1+t9nF9CDt16tSp+jNnzhxj9kBYHx+fvMjIyLfq1at3fsqUKVFmr7lw8eLFGtOnTx9vsVju1xSAXzCOjYrr1q0LY0YbwFwcYC5IPmA///zzP2vo8MqXc7uhD2GHpCVl3rx5EVlZWf6aMkX58uV/lnmtH3300aMSh4SEfBIWFrbu1pMm2rp1a+c1a9aEagjgF7Kzs+tkZmYGaAjAJE7X+ykL1gQHB6dkZGQEaspqJk2aFG2YrKHDMj5cm7Vv3z5Vri5qymrq1q171njvW/r6+uZq6pYLlgteo9fHpxz+5pTV/y6vPNkjemjzng7/d3FWxv7QokePHlvM2N9+SVpskpOTO/v4+ORrqtyxY8cat23bdkdeXp6pg1fv9G/bwoEDB5567733XtPQZq5du1Zx586d7fPz8701VWJNmjQ5LJuGNuPv7581ceLEmTLrl6ZuKav31Bnc6T3dtWtXK+P4Ty4oKPDUlNVVqFDhZp06dc43a9bskJeXl9O0Xxa1j65du7aPYY2GJSbvlfG51bVVq1YZmrJb8nrldWtYYoGBgRmbNm3qWrMmbbp2Twp64w+213goM55YdTMKeocvGuVq6aBBg96Xh2ZsRkF/Jjc39zftPFLQ//Xjt/b+6f1BFmtvCw9soJi3U9KKEhISslEemrlVqlTpp40bN95xOryYmJgJ5cuXv2k8vOP/a63NGT4f7pU1P2dd6X1zRVqE3fFvX9qtevXqF+Pi4kYYJ5amnSzYI2u9p0ZB/8OePXusfpHNDHoCc8fXUZxNPrfk88t47HRouXExq1at6sfUYbCVhISE3ikpKV01NE3nzp23GicOWzX8lZdffvl9W1wBXrx48SC5I6AhABN169Zty5dffvlIRETEPG9v7wJNAy6Lgt5FWCyWCnIlY+DAgUuZOgy2IHO0x8TERF2/fr2ipkxhfJnnT5kypchVgqUNxhYDZKWtJzo6WlaQNfX1Aq6uX79+q7Zs2dLnoYcecpr1VIDSoqB3crLU9sqVK198/PHHMyMiIuaaXczXqVMnz93dnaslKDdv3rzBMle7hqYZOnToooCAgLuuEixX7+Uqvoamkdk8kpKSumgIwMqkrzwmJuZN4wT+sqYAGCjoi2HOnDmv+/r6nnWUzSisC6tVq3axf//+K7/66qvH9WWYysPDo6B69ep3vFIK13Ho0KGABQsWDNPQNI0bNz762muvLTS+3KU/skhy9V6u4svVfE2ZQk6YY2Nj33TWHk2gLMlMVpGRkbEPP/zwaU0BUBT0xSCLMcmAT0fZLl++7K6/us00adLkyO0j8uFaZCCsUdSOs8YMKHdTsWLF6xMmTJhqFOl5mroruYr/4osv/l1D0+zfv7/FihUrXtYQgJXIbFLPPvvseg0B/AIFPaxGCqyOHTumaggXlZSU1HnDhg2mz8vetm3btPDw8Hv+cper+JGRkbPkqr6mTCEL6MTFxUWcOHGikaYAWEFISEhStWrVvtMQwC9Q0MNqGjRokNOkSZNDGsIFyZiNadOmTTB7rIbMnzx58uRJxe2jlav5o0aNmi237jVlipycnAYzZswYI9PEagpAKVSpUuVKq1atdmsI4DYsLAWrGT169MxZs2aN1fBXWFjKNcyePXuksR/MMnuZdynK33nnndG/1zt/J0aR7d65c+f127Zt66QpU3h4eBSuX78+tFOnTk5318qan7P2tmDfkSNHmhj71sgbN27cpynco8cee+zLcePGzTaOy+uacslFkMxmrfdU7qp36NBhe61atex+tqDdu3e3Pn36dH0NS8yZF5aioIdV+Pj45KWlpbX/97L7t6Ogd362WpW1YcOGp3bu3NmxQYMG2ZoqNmNfbf3MM89sunTpkqmDV41iftvWrVtDi3snwd45c0FvrWLJFd2pWKKgtz720ZJz5oKelhuUmrQvDB8+fEFRxTycn8y9LgNhzS7mdZaLt0pTzIs2bdqkP/fcc6s1NM327ds7xMfHh2sIAIApKOhRakFBQelDhw6N0xAuKDU1tc3atWt7a2ga2dfCwsISNSwxadUZO3bsTBn3oSlTSOvRzJkzx5w6darUt4oBACgKBT1Kxc/P7+TSpUsHOuPtK9wbab+YOnVqVGFhoYemTCE96VFRUVOtta81atToRERERJzZA2SzsrL8582bF8EAWQCAWSjoUWK+vr65q1ev7ufv739SU2XiQuH3D+lDlIF169b1TU9PD9LQNOHh4QkdO3bcrqFVDBw4cHnz5s0PaGia5cuXD9i3b99TGgIAYFUU9CgRaVVITk7uYRRDn2mqzHxz5ZKP9HBrCBvKyclpKL3zZs9qI4Ou33jjjXdLMqvN3cic1uPHj4+pVKnSVU2Z4uLFizWmT58+3thP79cUAABWQ0GPYpM+5t27dwc98cQThzVVpk5ePPfE+SvfmToYE78lLSRxcXEjsrOzH9aUKaQlZsyYMTPNGnQdEhLySVhY2DoNTZOSktI1ISHB9HEGAADXQ0GPe1ahQoWbw4cPn28U813q1q17TtNl7l8/fud74MzXHTSEjezdu/fpJUuWvKKhaaQlRlpjNLQ6mTNbThi8vb3zNWWK69evV5w1a9aYvLw8b00BAGAVFPS4Jw0bNsxOTk7uPn/+/BH2Nqe2pZyl/Iavd78qc91rCiazWCzukydPjjZ7HndphZGWGLOXe2/WrFnmsGHDFmhomszMzIBFixYN1xAAAKugoMdd+fv7Z61evfr5U6dONe7cufNWTdudI99kt0g5cvBlDWGyhISE0LS0tLYamqZnz57rQ0JCbLLfDRkyZH5AQECmhqZZsGDBsEOHDgVoCABAqVHQo0ivvvpq/PHjx/8gC/C4ubld07Rdkqv073+eNHnbyYNhmoJJ8vPzfWJiYqKkhURTppAWGFlEylb7no+PT/7o0aNnynLomjKF8f55y9z0DOQGAFgLBX0xVK1a9QeZqrGsN/k99Fcy1bp168LS09NLvbS7rRRe/8lr6qfLl23L+uwvMmBT07AieV/nzp079OjRo401ZRppgZFWGA1tIjw8/MOuXbum/H9kHjm2kpKSumgIAECpUNAXw+uvvz4nNze3bllvKSkpXWrUqHFRfy3TyFR7kZGRsd9//311TZVYTbeal7wfqJ6roWmkqI/csfR/JqctX/ad5btqmoaVZGZmNl24cOEQDU0jrS/SAqOhzcjdgDfffHOa2cfX1atXK02bNm2CNY4tWFefPn3WGj/kggBbMbeMjIyWLDLoOLy8vC7t2bOnpfHwjn9Pe9r0uMRdUNA7oMDAwP2jRo161+wVLsXevXtbzpkzx6FWuZT2m03HMwYEL4s691Z6wryCggJmFbECYx+4f+LEiVOkZURTppCBsHIiKS0wmrKpp59++rMBAwaYNqvOvx04cKD5smXLBmgI4C5+/PHHB/75z38+qCGA2zhMkXavZBn64ODglIyMDKu3ikyaNCnaMFnDMiWvs1evXkm7du36b02ZRq5WbtiwoWfr1q3TNVUi8w+sj1l2cMt4DW3GrZzbz9UqP/Dto951D1Wv9ECZFIllrWplz4uDHu8aXbVq1RJfed64cWNwnz59PpSry5oyRUhISJLxb/Uuy3EbMk7A2N93mN1aJAu0paamdmrUqNEJTTkEa37O2tPnKqxv7dq1xsdGnzUalorcJTeM1NBlWes9lSv0ycnJXVu1apWhKbslr1det4YlFhgYmLFp06auzngniYK+GOzti8d4jS169OixRVpjNGUaWUzKOAieKc30gdLbLu0wcgVdU7CR2h7Vzi5+9m8tfd1rlqjtSeZO79at21aZdlFTppCTx82bN3eXu1CaKjOLFy9+dciQIYvMXgV30KBBi99///0hxgmMVVfBNRMFPe6VNQv6xo0bH929e3d7b2/vPE25JAr6knPmgp7CyoE5WuvNw7UbZtao4vmNhnAgS5cuHXz48OEmGppGWl2k5UXDMvXqq68mdOjQYbuGpklISAhPTU1lYTTgdxw/fvwR4+SX6YmBO6Cgd3AjRoyY37Jly70amkauUsbFxUWkp6e30lSxPexZK/uJ2g/v0xAO4tixY43nz58/zOwr1XL1LTIycpa9XKk2fo/L48ePnypXsTRlisLCQo8ZM2aMNU6W3TUF4A7kM2j27Nkjd+7cafoaGICjoaB3cNICExsbG+kIs94YBdL1Ho8ELr+vfAVT5/mG9RhFZkVj/xqXl5fnoylTyNzvMue8vd1Kb9OmTbqsw6ChabZv394hPj4+XEMARZDvoZ49e25ITExkemLgFyjonUBQUNCeiIiIOEdovWnaoN7OP9aq/7mGsHOpqalt1q5d21tD07Rt2zatf//+djctmdwtePPNN99q2LDhKU2ZQq88jpLBuJoCUIRLly559evXb5UsfijjezQNuDQKeicgRcfrr78e5witNzIf/cAnu06/r/x9VzUFOyUDH2WaSmkJ0ZQppKVFWlukxUVTdqVBgwbZcvfA7BNmmVEnNjZ2NFcd4Uxq16593tPTs0BDq7l582aFJUuWvGwcn2dlwKS04Zw5c6aOcfzcr/8J4FIo6J2ErVtvjAJsmhR8miqWoHpNP+naqLnpbQwonXXr1vXdv39/Cw1NIy0t0tqioV0KCwtLlJmeNDTN8uXLB+zbt+8pDVEGdCYNGcfBVswtMDBw7+3fC97e3vkeHh6FGlqdTKMrf7N27drtrFev3jk3Nze5WHTH38/Rtju9n0BRKOidiC1bb9LT04MWLlwYoWGxSC/9yGa9RgbU9rfrIs6V5eTkNJTeebMHwkori7S0yF0mTdklmeIsKipqqpmFiZCT5enTp4/nKiOcRePGjc/+8Y9//EpDACahoHcitm69kdkGZC58TRWL3FF4t/3gXk1r++3RFOyEtHwYReW47OzshzVlCjnxlFYWaWnRlF3r2LHj9vDw8AQNTbN169bOa9asCdUQcGjG99KVLl26fKIhAJNQ0DsZKZRnzpw52latN3/7299mlPSWoJeX17dz2g8Npai3L59++mnQ6tWrn9PQNNLCIq0sGto9OWEeO3bsTFndVVOmkBYCaZ9jsB+cRe/evdc/9NBD5zQEYAIKeidkywWnStN6I6Sof7vn2G7tGzRbpymUIYvF4j5t2rQomUVCU6aQ1hVpYXG01foaNWp0whZtbbKIlyzmpSHg0Pz8/LJeeeWVJRoCMAEFvZMaOnRonC0G8ZW29UZ4u7kVzOg8pO+IFqHjKt93v13OdOIqVq5c2SctLc30RVukdUVaWDR0KC+99NJSs48tOa5kMS9Z1EtTgEMbMmTI/ICAgEwNAVgZBb2Tkiufb7/99lhHaL0Rbm5uN/8a0P3tZcHjWj5Ssy4f+mVA5kCXgbDXr1+vqClTSMuKtK7Y+0DYothqgKws5hUdHR1lsVhM/XsAtuDj45M/d+7c12zxnQS4Igp6JyatNxMmTIhxhNabf3u0tu8Xq8Im/HlO12Ehdb3+K0vTMJkMhJU50GUudE2ZQvZFaVmR1hVNOSRbDZDdsGFDT1ncS0PAobVu3Tp93bp1YRT1gPVR0Du5kSNHzu/Ro8dmDU1jjdabf5Or9a3rB2z6+Lmpj64KnRjQye9PibTimCszM7Pp3//+9xc1NE2LFi32S8uKhg5L7i6MGzduur+/v6knnbKolyzuxVzUcBbt2rVL+/DDD5+V+ek1BcAKnG5FQovFUqVv377L9+7d21JTVjNq1KjZMthUQ4eRlZXl98ILL6w6d+5cHU2ZpmXLlnsSExNfNgoeq7YjGH/XCtkF5xsdPHu8Xea/TrU89u2ZJ3+8dqWqPo3f4e1e7fw7XV4N9fbwztPUf8h7O3jw4AVbtmzprilTVK5c+adFixYN6tix405NOTyZDcgo7GNv3Lhxn6aszjiWfn733XdH9e7d224GjssJRnBwcIpxAh+oqRKbNGlStGGyhmVOFimSlUc1RDEEBgZmbNq0qeu9DHb/6quvHvvLX/6y2vj5uKZwm6LeT2vto7JKd3JyctdWrVplaMpuyevVRd9KpTj7KAAATk0KeuOLUda7+NXKliXZjILebop5wUqxJd9knyjO3SSLxeI+fPjweRUqVLghIduvt6LeT2vto0ZB/8OePXtKfVJuC3oCc8fXUZytuPuoI6HlBgAA2Jybm9vl+fPnjzh48GBAt27dko3C/qY+BaCYKOgBAECZadq06ZfJycndT5486R8VFRVTt27dM7aYzAFwJk7XQw8AMJeMVZoyZcqYrKwsf02VWK9evT4KCwv7WMMyd+TIkSbvvPPOSDPHRTgrGSQ+ceJEmZL2iqZKTPaxL774orHx93jMKPT9Tpw40UifchlFvZ/W2kc9PT0Lxo8fP93X1zdXU3Zr2bJlf92xY0d7DUvMmvsoAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGJyulluQlaPzzn/Q359DQHAaTzp0zgt/plR7TQEAOAWpyroLRbL/X9ePPhqlToemgEA51DXo9ax41mnH/3H4MVMNwwA+BUWlgIAAAAcGAU9AAAA4MAo6AEAAAAHRkEPAAAAODAKegAAAMCBUdADAAAADoyCHgAAAHBgFPQAAACAA6OgBwAAABwYBT0AAADgwJxuCfF+H8UcOpZ/JkBDwFT+NX0PZ13IbaIhYKon6zROiw8Z1U5DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3KZcuf8DFbGbF64idrYAAAAASUVORK5CYII=\"; \nlet bloco = msg.payload;\n\nmsg.payload = {\n    content: [\n        // 1. Cabeçalho com Logo e Título\n        {\n            columns: [\n                { text: 'RELATÓRIO DE MONITORAMENTO', style: 'header', alignment: 'left' },\n                { image: logoBase64, width: 110 }\n            ]\n        },\n        { text: '__________________________________________________________________________________________________________________', margin: [0, 5, 0, 5] },\n        \n        // 2. Tabela de Dados\n        {\n            table: {\n                headerRows: 1,\n                //widths: ['*', '*', 'auto', 'auto'],\n                widths: ['*', '*', '*', '*'],\n                body: [\n                    // Cabeçalho da Tabela\n                    [\n                        { text: 'Data/Hora', style: 'tableHeader' }, \n                        { text: 'Sensor', style: 'tableHeader' }, \n                        { text: 'Temp (°C)', style: 'tableHeader' }, \n                        { text: 'Hum (%)', style: 'tableHeader' }\n                    ],\n                    \n                    // Dados (Exemplo manual, mas você pode mapear de um array)\n                    \n                    ['2024-05-20 14:00', 'Sensor_00', '25.4', '62'],\n                    ['2024-05-20 14:10', 'Sensor_01', '25.6', '61'],\n                    ['2024-05-20 14:20', 'Sensor_02', '22.1', '75']\n                ]\n            },\n            layout: 'lightHorizontalLines' // Estilo visual da tabela\n        }\n    ],\n    \n    // 3. Rodapé Fixo\n    footer: function(currentPage, pageCount) { \n        return { \n            text: 'Página ' + currentPage.toString() + ' de ' + pageCount, \n            alignment: 'center', \n            style: 'footerStyle' \n        }; \n    },\n\n    // 4. Estilização\n    styles: {\n        header: { fontSize: 18, bold: true },\n        tableHeader: { bold: true, fontSize: 11, color: 'black', fillColor: '#eeeeee' },\n        footerStyle: { fontSize: 8, italics: true }\n    },\n    defaultStyle: { fontSize: 10 }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 620,
+        "wires": [
+            [
+                "c78c9f7c2b696a65"
+            ]
+        ]
+    },
+    {
+        "id": "d6685ec6555c643c",
+        "type": "inject",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 620,
+        "wires": [
+            [
+                "0837bf1c2062e258"
+            ]
+        ]
+    },
+    {
+        "id": "63c64a83a60ba109",
+        "type": "file",
+        "z": "ce71a40f58e8877b",
+        "name": "teste",
+        "filename": ".node-red/teste2.pdf",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 950,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c78c9f7c2b696a65",
+        "type": "pdfbuilder",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "outputType": "Buffer",
+        "inputProperty": "payload",
+        "options": "{}",
+        "outputProperty": "payload",
+        "x": 760,
+        "y": 620,
+        "wires": [
+            [
+                "63c64a83a60ba109"
+            ]
+        ]
+    },
+    {
+        "id": "ee014f8d9f0f96d2",
+        "type": "comment",
+        "z": "ce71a40f58e8877b",
+        "name": "Gera PDF com dados estáticos",
+        "info": "",
+        "x": 350,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "9d527d3dc08bcea5",
+        "type": "comment",
+        "z": "ce71a40f58e8877b",
+        "name": "Gera PDF com dados dinâmicos do DB",
+        "info": "",
+        "x": 390,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "74b726245f9b84a4",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "function 6",
+        "func": "//msg.topic = \"SELECT medicao.dataMedicao, medicao.valorTemp, medicao.valorHumi, sensor.serial FROM medicao INNER JOIN sensor ON medicao.sensor_idsensor = sensor.idsensor\";\nmsg.topic = \"SELECT DATE_FORMAT(medicao.dataMedicao, '%d/%m/%Y %H:%i:%s') as data_formatada, medicao.valorTemp, medicao.valorHumi, sensor.serial FROM medicao INNER JOIN sensor ON medicao.sensor_idsensor = sensor.idsensor\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 40,
+        "wires": [
+            [
+                "9db458103603788e"
+            ]
+        ]
+    },
+    {
+        "id": "296a3712221c275a",
+        "type": "inject",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 40,
+        "wires": [
+            [
+                "74b726245f9b84a4"
+            ]
+        ]
+    },
+    {
+        "id": "b0102f4a02cd84f6",
+        "type": "ui-table",
+        "z": "ce71a40f58e8877b",
+        "group": "21e434cf4ee01898",
+        "name": "",
+        "label": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "append",
+        "className": "",
+        "x": 750,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6fa9b60bf87298b5",
+        "type": "http in",
+        "z": "ce71a40f58e8877b",
+        "name": "Visu PDF",
+        "url": "/abrir-pdf",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 420,
+        "y": 340,
+        "wires": [
+            [
+                "11c7def0d912aaef"
+            ]
+        ]
+    },
+    {
+        "id": "11c7def0d912aaef",
+        "type": "file in",
+        "z": "ce71a40f58e8877b",
+        "name": "Leitura PDF",
+        "filename": "/home/admin/.node-red/teste3.pdf",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "df88cae854880f74"
+            ]
+        ]
+    },
+    {
+        "id": "df88cae854880f74",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "function 7",
+        "func": "// Verifica se o payload não está vazio\nif (!msg.payload || msg.payload.length === 0) {\n    node.error(\"O arquivo está vazio ou não foi encontrado.\");\n    return null;\n}\n\nmsg.headers = {\n    'Content-Type': 'application/pdf',\n    'Content-Length': msg.payload.length,\n    'Content-Disposition': 'inline; filename=\"relatorio.pdf\"'\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 340,
+        "wires": [
+            [
+                "d03bc7421cea7e1b"
+            ]
+        ]
+    },
+    {
+        "id": "d03bc7421cea7e1b",
+        "type": "http response",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 970,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1ab55547ba52c58f",
+        "type": "comment",
+        "z": "ce71a40f58e8877b",
+        "name": "http",
+        "info": "http://[IP_DO_SEU_X20EDGE]:1880/abrir-pdf",
+        "x": 290,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "5232bfdbc8d50c8c",
+        "type": "http in",
+        "z": "ce71a40f58e8877b",
+        "name": "Visu PDF",
+        "url": "/abrir-pdf",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 480,
+        "wires": [
+            [
+                "ecde103aaf1b3dd1"
+            ]
+        ]
+    },
+    {
+        "id": "ecde103aaf1b3dd1",
+        "type": "file in",
+        "z": "ce71a40f58e8877b",
+        "name": "Leitura PDF",
+        "filename": "/home/root/relatorios/meu_pdf.pdf",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 490,
+        "y": 480,
+        "wires": [
+            [
+                "22979f2df931cb77"
+            ]
+        ]
+    },
+    {
+        "id": "22979f2df931cb77",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "function 8",
+        "func": "msg.headers = {\n    'Content-Type': 'application/pdf'\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 480,
+        "wires": [
+            [
+                "7fadcbf40f3998df"
+            ]
+        ]
+    },
+    {
+        "id": "7fadcbf40f3998df",
+        "type": "http response",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 870,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c3357a13e5df5d9d",
+        "type": "comment",
+        "z": "ce71a40f58e8877b",
+        "name": "http",
+        "info": "http://[IP_DO_SEU_X20EDGE]:1880/abrir-pdf",
+        "x": 190,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "9db458103603788e",
+        "type": "mysql",
+        "z": "ce71a40f58e8877b",
+        "mydb": "88fd8878f39950c9",
+        "name": "",
+        "x": 650,
+        "y": 120,
+        "wires": [
+            [
+                "e86235be796258a5",
+                "b0102f4a02cd84f6",
+                "87bfe4a2288eda34"
+            ]
         ]
     }
 ]
