@@ -949,6 +949,20 @@
         "charset": "UTF8"
     },
     {
+        "id": "dcbdfdb4ce15e7fa",
+        "type": "ui-group",
+        "name": "Group 17",
+        "page": "85c0a43fe9b7f435",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
         "id": "b7c88782747a9e57",
         "type": "ui-template",
         "z": "cf0ae7fb847811d6",
@@ -1440,6 +1454,30 @@
         "x": 460,
         "y": 480,
         "wires": []
+    },
+    {
+        "id": "9faa5ebf29c13555",
+        "type": "ui-template",
+        "z": "cf0ae7fb847811d6",
+        "group": "",
+        "page": "",
+        "ui": "359fdeb420e9b9b7",
+        "name": "Template Botões Cinza",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/*altera as propriedades do botão padrão*/\n#nrdb-ui-widget-055007d8ab186557 .v-btn--variant-flat {\n    background-color: #5a5a5a !important;\n    color: #f8f8f8;\n    height: 35px !important;\n    width: 10px !important;\n}\n#nrdb-ui-widget-055007d8ab186557 .v-btn--variant-flat:active{\n    /* Escolha a cor que você deseja que o botão tenha quando pressionado */\n    background-color: #f8f8f8 !important; /* Exemplo: Amarelo/Laranja */\n    color: #5a5a5a !important;  \n    font-weight: bold !important; \n}\n#nrdb-ui-widget-055007d8ab186557 .v-btn:active{\n    /* Mudar para uma borda amarela ao pressionar, por exemplo */\n    border: 2px solid #5a5a5a !important; \n    font-weight: bold !important;\n}\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 810,
+        "y": 480,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "bd5beda3f0c3995c",
@@ -3509,8 +3547,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "select * from sensor",
-        "x": 350,
-        "y": 120,
+        "x": 370,
+        "y": 300,
         "wires": [
             [
                 "9db458103603788e"
@@ -3528,8 +3566,8 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 950,
-        "y": 700,
+        "x": 990,
+        "y": 1260,
         "wires": [
             []
         ]
@@ -3543,8 +3581,8 @@
         "inputProperty": "payload",
         "options": "{}",
         "outputProperty": "payload",
-        "x": 760,
-        "y": 700,
+        "x": 800,
+        "y": 1260,
         "wires": [
             [
                 "99a2c162dbdd04f2"
@@ -3563,8 +3601,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 560,
-        "y": 700,
+        "x": 600,
+        "y": 1260,
         "wires": [
             [
                 "a723f5ba7834c3c8"
@@ -3592,8 +3630,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 340,
-        "y": 700,
+        "x": 380,
+        "y": 1260,
         "wires": [
             [
                 "86f13a9e41a114b2"
@@ -3611,8 +3649,8 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 950,
-        "y": 780,
+        "x": 990,
+        "y": 1340,
         "wires": [
             []
         ]
@@ -3626,8 +3664,8 @@
         "inputProperty": "payload",
         "options": "{}",
         "outputProperty": "payload",
-        "x": 760,
-        "y": 780,
+        "x": 800,
+        "y": 1340,
         "wires": [
             [
                 "ada4408845a0b11b"
@@ -3646,8 +3684,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 560,
-        "y": 780,
+        "x": 600,
+        "y": 1340,
         "wires": [
             [
                 "cd80ad821ab89241"
@@ -3675,8 +3713,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 340,
-        "y": 780,
+        "x": 380,
+        "y": 1340,
         "wires": [
             [
                 "e69534da10e87a32"
@@ -3694,8 +3732,8 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 990,
-        "y": 260,
+        "x": 1010,
+        "y": 440,
         "wires": [
             []
         ]
@@ -3709,8 +3747,8 @@
         "inputProperty": "payload",
         "options": "{}",
         "outputProperty": "payload",
-        "x": 760,
-        "y": 260,
+        "x": 780,
+        "y": 440,
         "wires": [
             [
                 "7b0e29f70b1eb471"
@@ -3729,8 +3767,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 260,
+        "x": 600,
+        "y": 440,
         "wires": [
             [
                 "9c5e9f625b6b3206"
@@ -3758,8 +3796,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 360,
-        "y": 260,
+        "x": 380,
+        "y": 440,
         "wires": [
             [
                 "87bfe4a2288eda34"
@@ -3775,11 +3813,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 900,
-        "y": 120,
+        "x": 920,
+        "y": 300,
         "wires": []
     },
     {
@@ -3794,8 +3833,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 560,
-        "y": 620,
+        "x": 600,
+        "y": 1180,
         "wires": [
             [
                 "c78c9f7c2b696a65"
@@ -3823,8 +3862,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 340,
-        "y": 620,
+        "x": 380,
+        "y": 1180,
         "wires": [
             [
                 "0837bf1c2062e258"
@@ -3842,8 +3881,8 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 950,
-        "y": 620,
+        "x": 990,
+        "y": 1180,
         "wires": [
             []
         ]
@@ -3857,8 +3896,8 @@
         "inputProperty": "payload",
         "options": "{}",
         "outputProperty": "payload",
-        "x": 760,
-        "y": 620,
+        "x": 800,
+        "y": 1180,
         "wires": [
             [
                 "63c64a83a60ba109"
@@ -3871,8 +3910,8 @@
         "z": "ce71a40f58e8877b",
         "name": "Gera PDF com dados estáticos",
         "info": "",
-        "x": 350,
-        "y": 560,
+        "x": 390,
+        "y": 1120,
         "wires": []
     },
     {
@@ -3881,24 +3920,24 @@
         "z": "ce71a40f58e8877b",
         "name": "Gera PDF com dados dinâmicos do DB",
         "info": "",
-        "x": 390,
-        "y": 180,
+        "x": 410,
+        "y": 360,
         "wires": []
     },
     {
         "id": "74b726245f9b84a4",
         "type": "function",
         "z": "ce71a40f58e8877b",
-        "name": "function 6",
-        "func": "//msg.topic = \"SELECT medicao.dataMedicao, medicao.valorTemp, medicao.valorHumi, sensor.serial FROM medicao INNER JOIN sensor ON medicao.sensor_idsensor = sensor.idsensor\";\nmsg.topic = \"SELECT DATE_FORMAT(medicao.dataMedicao, '%d/%m/%Y %H:%i:%s') as data_formatada, medicao.valorTemp, medicao.valorHumi, sensor.serial FROM medicao INNER JOIN sensor ON medicao.sensor_idsensor = sensor.idsensor\";\nreturn msg;\n",
+        "name": "function 6 (SQL)",
+        "func": "let quant = flow.get(\"quantMed\") || 10; // Use 10 como padrão se estiver vazio//msg.topic = \"SELECT medicao.dataMedicao, medicao.valorTemp, medicao.valorHumi, sensor.serial FROM medicao INNER JOIN sensor ON medicao.sensor_idsensor = sensor.idsensor\";\nmsg.topic = \"SELECT DATE_FORMAT(medicao.dataMedicao, '%d/%m/%Y %H:%i:%s') as data_formatada, medicao.valorTemp, medicao.valorHumi, sensor.serial FROM medicao INNER JOIN sensor ON medicao.sensor_idsensor = sensor.idsensor ORDER BY medicao.dataMedicao DESC LIMIT \" + quant;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 40,
+        "x": 620,
+        "y": 220,
         "wires": [
             [
                 "9db458103603788e"
@@ -3906,7 +3945,226 @@
         ]
     },
     {
-        "id": "296a3712221c275a",
+        "id": "6fa9b60bf87298b5",
+        "type": "http in",
+        "z": "ce71a40f58e8877b",
+        "name": "Visu PDF",
+        "url": "/abrir-pdf",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 440,
+        "y": 520,
+        "wires": [
+            [
+                "11c7def0d912aaef"
+            ]
+        ]
+    },
+    {
+        "id": "11c7def0d912aaef",
+        "type": "file in",
+        "z": "ce71a40f58e8877b",
+        "name": "Leitura PDF",
+        "filename": "/home/admin/.node-red/teste3.pdf",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 610,
+        "y": 520,
+        "wires": [
+            [
+                "df88cae854880f74"
+            ]
+        ]
+    },
+    {
+        "id": "df88cae854880f74",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "function 7",
+        "func": "// Verifica se o payload não está vazio\nif (!msg.payload || msg.payload.length === 0) {\n    node.error(\"O arquivo está vazio ou não foi encontrado.\");\n    return null;\n}\n\nmsg.headers = {\n    'Content-Type': 'application/pdf',\n    'Content-Length': msg.payload.length,\n    'Content-Disposition': 'inline; filename=\"relatorio.pdf\"'\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 520,
+        "wires": [
+            [
+                "d03bc7421cea7e1b"
+            ]
+        ]
+    },
+    {
+        "id": "d03bc7421cea7e1b",
+        "type": "http response",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 990,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "1ab55547ba52c58f",
+        "type": "comment",
+        "z": "ce71a40f58e8877b",
+        "name": "PDF via web - http",
+        "info": "http://[IP_DO_SEU_X20EDGE]:1880/abrir-pdf",
+        "x": 350,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "5232bfdbc8d50c8c",
+        "type": "http in",
+        "z": "ce71a40f58e8877b",
+        "name": "Visu PDF",
+        "url": "/abrir-pdf",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 460,
+        "y": 1060,
+        "wires": [
+            [
+                "ecde103aaf1b3dd1"
+            ]
+        ]
+    },
+    {
+        "id": "ecde103aaf1b3dd1",
+        "type": "file in",
+        "z": "ce71a40f58e8877b",
+        "name": "Leitura PDF",
+        "filename": "/home/root/relatorios/meu_pdf.pdf",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 630,
+        "y": 1060,
+        "wires": [
+            [
+                "22979f2df931cb77"
+            ]
+        ]
+    },
+    {
+        "id": "22979f2df931cb77",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "function 8",
+        "func": "msg.headers = {\n    'Content-Type': 'application/pdf'\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 1060,
+        "wires": [
+            [
+                "7fadcbf40f3998df"
+            ]
+        ]
+    },
+    {
+        "id": "7fadcbf40f3998df",
+        "type": "http response",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1010,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "c3357a13e5df5d9d",
+        "type": "comment",
+        "z": "ce71a40f58e8877b",
+        "name": "http",
+        "info": "http://[IP_DO_SEU_X20EDGE]:1880/abrir-pdf",
+        "x": 330,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "9db458103603788e",
+        "type": "mysql",
+        "z": "ce71a40f58e8877b",
+        "mydb": "88fd8878f39950c9",
+        "name": "",
+        "x": 670,
+        "y": 300,
+        "wires": [
+            [
+                "87bfe4a2288eda34",
+                "e86235be796258a5"
+            ]
+        ]
+    },
+    {
+        "id": "2540e0249709df3e",
+        "type": "comment",
+        "z": "ce71a40f58e8877b",
+        "name": "SLQ com limite de busca",
+        "info": "SELECT temperatura, umidade, data_hora \nFROM suas_medidas \nORDER BY data_hora DESC \nLIMIT 20;",
+        "x": 510,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "2ecd9cb3b261ddbf",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "SQL sem lim",
+        "func": "//msg.topic = \"SELECT medicao.dataMedicao, medicao.valorTemp, medicao.valorHumi, sensor.serial FROM medicao INNER JOIN sensor ON medicao.sensor_idsensor = sensor.idsensor\";\nmsg.topic = \"SELECT DATE_FORMAT(medicao.dataMedicao, '%d/%m %H:%i') as data_formatada, medicao.valorTemp, medicao.valorHumi, sensor.serial FROM medicao INNER JOIN sensor ON medicao.sensor_idsensor = sensor.idsensor ORDER BY medicao.dataMedicao ASC LIMIT 20\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 740,
+        "wires": [
+            [
+                "814d1cd12592d35c"
+            ]
+        ]
+    },
+    {
+        "id": "814d1cd12592d35c",
+        "type": "mysql",
+        "z": "ce71a40f58e8877b",
+        "mydb": "88fd8878f39950c9",
+        "name": "",
+        "x": 730,
+        "y": 740,
+        "wires": [
+            [
+                "b11e84cb658ca9f5",
+                "e15074272a149573",
+                "4734cea4dad6afde",
+                "906b023ad10ec29a"
+            ]
+        ]
+    },
+    {
+        "id": "f10ce925461e7be1",
         "type": "inject",
         "z": "ce71a40f58e8877b",
         "name": "",
@@ -3926,8 +4184,734 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 360,
+        "x": 220,
+        "y": 740,
+        "wires": [
+            [
+                "2ecd9cb3b261ddbf"
+            ]
+        ]
+    },
+    {
+        "id": "b11e84cb658ca9f5",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "Tabela Medições",
+        "func": "// 1. Prepara a mensagem de limpeza\nlet msgLimpeza = { payload: [] };\n\n// 2. Prepara a mensagem com os novos dados (que vieram do MySQL)\nlet msgDados = { \n    payload: msg.payload, // Seus dados do banco\n    ui_control: msg.ui_control // Suas colunas formatadas\n};\n\n// 3. Retorna as duas mensagens em um array. \n// O Node-RED enviará a primeira (limpeza) e logo em seguida a segunda (dados).\nreturn [ [msgLimpeza, msgDados] ];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 900,
+        "wires": [
+            [
+                "d095953c7a53f59e"
+            ]
+        ]
+    },
+    {
+        "id": "9b1318b4bed694a1",
+        "type": "debug",
+        "z": "ce71a40f58e8877b",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1360,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "d095953c7a53f59e",
+        "type": "ui-table",
+        "z": "ce71a40f58e8877b",
+        "group": "6c2ed50c62f6849d",
+        "name": "",
+        "label": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "",
+        "passthru": false,
+        "autocols": false,
+        "showSearch": false,
+        "deselect": false,
+        "selectionType": "click",
+        "columns": [
+            {
+                "title": "Data/Hora",
+                "key": "data_formatada",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Temperatura ºC",
+                "key": "valorTemp",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Humidade %",
+                "key": "valorHumi",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Número ID",
+                "key": "serial",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "append",
+        "className": "",
+        "x": 1190,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4734cea4dad6afde",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "function 12",
+        "func": "var pontos = [];\n\nmsg.payload.forEach(function(linha) {\n    pontos.push({\n        series: \"A\",\n        x: linha.valorHumi,\n        y: linha.valorTemp\n    });\n});\n\nmsg.payload = pontos;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 680,
+        "wires": [
+            [
+                "02af50f42540b03a"
+            ]
+        ]
+    },
+    {
+        "id": "e15074272a149573",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "Temperatura",
+        "func": "var pontos = [];\n\nmsg.payload.forEach(function(linha) {\n    pontos.push({\n        series: \"A\",\n        x: linha.data_formatada,\n        y: linha.valorTemp\n    });\n});\n\nmsg.payload = pontos;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 820,
+        "wires": [
+            [
+                "fdffc89c1b9bea79"
+            ]
+        ]
+    },
+    {
+        "id": "36e6f147cb99eaae",
+        "type": "inject",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"series\":\"A\",\"x\":5,\"y\":84},{\"series\":\"A\",\"x\":9,\"y\":10},{\"series\":\"A\",\"x\":11,\"y\":70},{\"series\":\"B\",\"x\":12,\"y\":28},{\"series\":\"B\",\"x\":15,\"y\":35},{\"series\":\"B\",\"x\":26,\"y\":42},{\"series\":\"C\",\"x\":20,\"y\":12},{\"series\":\"C\",\"x\":24,\"y\":54},{\"series\":\"C\",\"x\":27,\"y\":60},{\"series\":\"C\",\"x\":30,\"y\":66}]",
+        "payloadType": "json",
+        "x": 1190,
+        "y": 600,
+        "wires": [
+            [
+                "701ce2930b1de0ce"
+            ]
+        ]
+    },
+    {
+        "id": "701ce2930b1de0ce",
+        "type": "ui-chart",
+        "z": "ce71a40f58e8877b",
+        "d": true,
+        "group": "6c2ed50c62f6849d",
+        "name": "",
+        "label": "chart",
+        "order": 3,
+        "chartType": "line",
+        "category": "series",
+        "categoryType": "property",
+        "xAxisLabel": "",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1190,
+        "y": 660,
+        "wires": [
+            [
+                "9b1318b4bed694a1"
+            ]
+        ]
+    },
+    {
+        "id": "02af50f42540b03a",
+        "type": "ui-chart",
+        "z": "ce71a40f58e8877b",
+        "d": true,
+        "group": "6c2ed50c62f6849d",
+        "name": "",
+        "label": "chart",
+        "order": 6,
+        "chartType": "line",
+        "category": "",
+        "categoryType": "none",
+        "xAxisLabel": "",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "linear",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1190,
+        "y": 720,
+        "wires": [
+            [
+                "9b1318b4bed694a1"
+            ]
+        ]
+    },
+    {
+        "id": "fdffc89c1b9bea79",
+        "type": "ui-chart",
+        "z": "ce71a40f58e8877b",
+        "group": "dcbdfdb4ce15e7fa",
+        "name": "",
+        "label": "Temperatura ºC",
+        "order": 2,
+        "chartType": "line",
+        "category": "series",
+        "categoryType": "property",
+        "xAxisLabel": "Data/Hora",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "category",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "TºC",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "-40",
+        "ymax": "50",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1220,
+        "y": 820,
+        "wires": [
+            [
+                "9b1318b4bed694a1"
+            ]
+        ]
+    },
+    {
+        "id": "906b023ad10ec29a",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "Humidade",
+        "func": "var pontos = [];\n\nmsg.payload.forEach(function(linha) {\n    pontos.push({\n        series: linha.serial,\n        x: linha.data_formatada,\n        y: linha.valorHumi\n    });\n});\n\nmsg.payload = pontos;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 760,
+        "wires": [
+            [
+                "b4de7e92138d0a5d"
+            ]
+        ]
+    },
+    {
+        "id": "b4de7e92138d0a5d",
+        "type": "ui-chart",
+        "z": "ce71a40f58e8877b",
+        "group": "dcbdfdb4ce15e7fa",
+        "name": "",
+        "label": "Humidade %",
+        "order": 3,
+        "chartType": "line",
+        "category": "series",
+        "categoryType": "property",
+        "xAxisLabel": "Data/Hora",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "category",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "H%",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1210,
+        "y": 760,
+        "wires": [
+            [
+                "9b1318b4bed694a1"
+            ]
+        ]
+    },
+    {
+        "id": "ccc01d1be0dcb62c",
+        "type": "ui-chart",
+        "z": "ce71a40f58e8877b",
+        "d": true,
+        "group": "6c2ed50c62f6849d",
+        "name": "",
+        "label": "Temperatura ºC",
+        "order": 4,
+        "chartType": "line",
+        "category": "",
+        "categoryType": "none",
+        "xAxisLabel": "Data/Hora",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "category",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "TºC",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "-40",
+        "ymax": "40",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1220,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "63aeddb77e0288fe",
+        "type": "comment",
+        "z": "ce71a40f58e8877b",
+        "name": "Configurações de tabelas e gráficos",
+        "info": "",
+        "x": 400,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7e99419dfbb536ed",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "SQL com lim quantMed",
+        "func": "let quantMed = msg.payload;\n\nmsg.topic = \"SELECT DATE_FORMAT(medicao.dataMedicao, '%d/%m %H:%i') as data_formatada, medicao.valorTemp, medicao.valorHumi, sensor.serial FROM medicao INNER JOIN sensor ON medicao.sensor_idsensor = sensor.idsensor ORDER BY medicao.dataMedicao ASC LIMIT \" + quantMed;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 820,
+        "wires": [
+            [
+                "814d1cd12592d35c"
+            ]
+        ]
+    },
+    {
+        "id": "9108e64604f01467",
+        "type": "ui-number-input",
+        "z": "ce71a40f58e8877b",
+        "group": "dcbdfdb4ce15e7fa",
+        "name": "Input Númerico 01",
+        "label": "",
+        "order": 1,
+        "width": "1",
+        "height": "1",
+        "topic": "payload",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "tooltip": "",
+        "passthru": false,
+        "sendOnBlur": false,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "spinner": "default",
+        "x": 210,
+        "y": 820,
+        "wires": [
+            [
+                "7e99419dfbb536ed",
+                "5f389b75b99cce85"
+            ]
+        ]
+    },
+    {
+        "id": "d0fe44b19d9839e0",
+        "type": "ui-template",
+        "z": "ce71a40f58e8877b",
+        "group": "",
+        "page": "85c0a43fe9b7f435",
+        "ui": "",
+        "name": "Estilo Input",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* Input Numérico Customizado: #nrdb-ui-widget-920ae39f721a0ac5 */\n#nrdb-ui-widget-9108e64604f01467  {\n\n/* Remove a borda e cor de fundo padrão, aplica a cor de fundo F8F8F8 */\n.v-field {\nbackground-color: #f8f8f8 !important; /* Cor de Fundo Solicitada */\nheight: 35px !important; /* Altura do campo */\nborder: none !important;\nborder-image-width: 0px !important;\n--v-field-padding-start: 0px !important;\nfont-weight: bold !important;\n}\n\n.v-field__input {\n/* Centraliza o texto (valor digitado) HORIZONTALMENTE */\ntext-align: center !important;\n\n/* Cor do Texto (Escrita) */\ncolor: green !important; /* Cor Verde Solicitada */\n\n/* Garante o alinhamento de Altura */\nmin-height: 35px !important;\nheight: 35px !important;\nline-height: 35px !important; /* Ajuda na centralização vertical */\npadding-top: 0 !important;\npadding-bottom: 0 !important;\npadding-inline: 0 !important;\n}\n\n/* Esconde os containers dos botões de incremento/decremento */\n.v-field__append-inner,\n.v-field__prepend-inner {\ndisplay: none !important;\n}\n\n    /* SELETORES CRUCIAIS: Remove todas as linhas de desenho do Vuetify, incluindo a linha de foco. */\n    .v-field__outline,\n    .v-field__overlay,\n    .v-field__field::before,\n    .v-field__field::after,\n    .v-field__input::before,\n    .v-field__input::after {\n    border: none !important;\n    box-shadow: none !important;\n    opacity: 0 !important;\n    }\n\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 190,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f91bc1bd6f58e433",
+        "type": "ui-button",
+        "z": "ce71a40f58e8877b",
+        "group": "6c2ed50c62f6849d",
+        "name": "",
+        "label": "Abrir PDF",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 320,
+        "y": 100,
+        "wires": [
+            [
+                "35acfd1f2464a3ec"
+            ]
+        ]
+    },
+    {
+        "id": "aeb58f05fe284502",
+        "type": "ui-template",
+        "z": "ce71a40f58e8877b",
+        "group": "",
+        "page": "",
+        "ui": "359fdeb420e9b9b7",
+        "name": "Template Botões Cinza",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/*altera as propriedades do botão padrão*/\n#nrdb-ui-widget-f91bc1bd6f58e433, #nrdb-ui-widget-7d153ebb03ccbd0a{\n.v-btn--variant-flat {\n    background-color: #5a5a5a !important;\n    color: #f8f8f8;\n    height: 35px !important;\n    width: 10px !important;\n}\n.v-btn--variant-flat:active{\n    /* Escolha a cor que você deseja que o botão tenha quando pressionado */\n    background-color: #f8f8f8 !important; /* Exemplo: Amarelo/Laranja */\n    color: #5a5a5a !important;  \n    font-weight: bold !important; \n}\n.v-btn:active{\n    /* Mudar para uma borda amarela ao pressionar, por exemplo */\n    border: 2px solid #5a5a5a !important; \n    font-weight: bold !important;\n}\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 370,
         "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35acfd1f2464a3ec",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "function 11 (Acess PDF)",
+        "func": "msg.payload = { \n    url: \"http://192.168.0.102:1880/abrir-pdf\" \n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 100,
+        "wires": [
+            [
+                "cc7d2c2ea3131aec"
+            ]
+        ]
+    },
+    {
+        "id": "cc7d2c2ea3131aec",
+        "type": "ui-control",
+        "z": "ce71a40f58e8877b",
+        "name": "",
+        "ui": "359fdeb420e9b9b7",
+        "events": "all",
+        "x": 920,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7d153ebb03ccbd0a",
+        "type": "ui-button",
+        "z": "ce71a40f58e8877b",
+        "group": "6c2ed50c62f6849d",
+        "name": "",
+        "label": "Gerar Novo PDF",
+        "order": 5,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 350,
+        "y": 160,
         "wires": [
             [
                 "74b726245f9b84a4"
@@ -3935,174 +4919,51 @@
         ]
     },
     {
-        "id": "6fa9b60bf87298b5",
-        "type": "http in",
+        "id": "1249fb0e189e4df3",
+        "type": "inject",
         "z": "ce71a40f58e8877b",
-        "name": "Visu PDF",
-        "url": "/abrir-pdf",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 420,
-        "y": 340,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 380,
+        "y": 220,
         "wires": [
             [
-                "11c7def0d912aaef"
+                "74b726245f9b84a4"
             ]
         ]
     },
     {
-        "id": "11c7def0d912aaef",
-        "type": "file in",
-        "z": "ce71a40f58e8877b",
-        "name": "Leitura PDF",
-        "filename": "/home/admin/.node-red/teste3.pdf",
-        "filenameType": "str",
-        "format": "",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 590,
-        "y": 340,
-        "wires": [
-            [
-                "df88cae854880f74"
-            ]
-        ]
-    },
-    {
-        "id": "df88cae854880f74",
+        "id": "5f389b75b99cce85",
         "type": "function",
         "z": "ce71a40f58e8877b",
-        "name": "function 7",
-        "func": "// Verifica se o payload não está vazio\nif (!msg.payload || msg.payload.length === 0) {\n    node.error(\"O arquivo está vazio ou não foi encontrado.\");\n    return null;\n}\n\nmsg.headers = {\n    'Content-Type': 'application/pdf',\n    'Content-Length': msg.payload.length,\n    'Content-Disposition': 'inline; filename=\"relatorio.pdf\"'\n};\n\nreturn msg;",
+        "name": "Armazena quantMed",
+        "func": "// Salva o valor do input no contexto do fluxo (memória node-red)\nflow.set(\"quantMed\", msg.payload);\n\n// Opcional: apenas para debug no console lateral\nnode.status({ fill: \"blue\", shape: \"dot\", text: \"Quantidade definida: \" + msg.payload });\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 340,
+        "x": 500,
+        "y": 900,
         "wires": [
             [
-                "d03bc7421cea7e1b"
-            ]
-        ]
-    },
-    {
-        "id": "d03bc7421cea7e1b",
-        "type": "http response",
-        "z": "ce71a40f58e8877b",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 970,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "1ab55547ba52c58f",
-        "type": "comment",
-        "z": "ce71a40f58e8877b",
-        "name": "http",
-        "info": "http://[IP_DO_SEU_X20EDGE]:1880/abrir-pdf",
-        "x": 290,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "5232bfdbc8d50c8c",
-        "type": "http in",
-        "z": "ce71a40f58e8877b",
-        "name": "Visu PDF",
-        "url": "/abrir-pdf",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 420,
-        "y": 500,
-        "wires": [
-            [
-                "ecde103aaf1b3dd1"
-            ]
-        ]
-    },
-    {
-        "id": "ecde103aaf1b3dd1",
-        "type": "file in",
-        "z": "ce71a40f58e8877b",
-        "name": "Leitura PDF",
-        "filename": "/home/root/relatorios/meu_pdf.pdf",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 590,
-        "y": 500,
-        "wires": [
-            [
-                "22979f2df931cb77"
-            ]
-        ]
-    },
-    {
-        "id": "22979f2df931cb77",
-        "type": "function",
-        "z": "ce71a40f58e8877b",
-        "name": "function 8",
-        "func": "msg.headers = {\n    'Content-Type': 'application/pdf'\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 780,
-        "y": 500,
-        "wires": [
-            [
-                "7fadcbf40f3998df"
-            ]
-        ]
-    },
-    {
-        "id": "7fadcbf40f3998df",
-        "type": "http response",
-        "z": "ce71a40f58e8877b",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 970,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "c3357a13e5df5d9d",
-        "type": "comment",
-        "z": "ce71a40f58e8877b",
-        "name": "http",
-        "info": "http://[IP_DO_SEU_X20EDGE]:1880/abrir-pdf",
-        "x": 290,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "9db458103603788e",
-        "type": "mysql",
-        "z": "ce71a40f58e8877b",
-        "mydb": "88fd8878f39950c9",
-        "name": "",
-        "x": 650,
-        "y": 120,
-        "wires": [
-            [
-                "e86235be796258a5",
-                "87bfe4a2288eda34"
+                "74b726245f9b84a4"
             ]
         ]
     }
