@@ -3566,8 +3566,8 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 990,
-        "y": 1260,
+        "x": 970,
+        "y": 1640,
         "wires": [
             []
         ]
@@ -3581,8 +3581,8 @@
         "inputProperty": "payload",
         "options": "{}",
         "outputProperty": "payload",
-        "x": 800,
-        "y": 1260,
+        "x": 780,
+        "y": 1640,
         "wires": [
             [
                 "99a2c162dbdd04f2"
@@ -3601,8 +3601,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
-        "y": 1260,
+        "x": 580,
+        "y": 1640,
         "wires": [
             [
                 "a723f5ba7834c3c8"
@@ -3630,8 +3630,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 380,
-        "y": 1260,
+        "x": 360,
+        "y": 1640,
         "wires": [
             [
                 "86f13a9e41a114b2"
@@ -3649,8 +3649,8 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 990,
-        "y": 1340,
+        "x": 970,
+        "y": 1720,
         "wires": [
             []
         ]
@@ -3664,8 +3664,8 @@
         "inputProperty": "payload",
         "options": "{}",
         "outputProperty": "payload",
-        "x": 800,
-        "y": 1340,
+        "x": 780,
+        "y": 1720,
         "wires": [
             [
                 "ada4408845a0b11b"
@@ -3684,8 +3684,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
-        "y": 1340,
+        "x": 580,
+        "y": 1720,
         "wires": [
             [
                 "cd80ad821ab89241"
@@ -3713,8 +3713,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 380,
-        "y": 1340,
+        "x": 360,
+        "y": 1720,
         "wires": [
             [
                 "e69534da10e87a32"
@@ -3833,8 +3833,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
-        "y": 1180,
+        "x": 580,
+        "y": 1560,
         "wires": [
             [
                 "c78c9f7c2b696a65"
@@ -3862,8 +3862,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 380,
-        "y": 1180,
+        "x": 360,
+        "y": 1560,
         "wires": [
             [
                 "0837bf1c2062e258"
@@ -3881,8 +3881,8 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 990,
-        "y": 1180,
+        "x": 970,
+        "y": 1560,
         "wires": [
             []
         ]
@@ -3896,8 +3896,8 @@
         "inputProperty": "payload",
         "options": "{}",
         "outputProperty": "payload",
-        "x": 800,
-        "y": 1180,
+        "x": 780,
+        "y": 1560,
         "wires": [
             [
                 "63c64a83a60ba109"
@@ -3910,8 +3910,8 @@
         "z": "ce71a40f58e8877b",
         "name": "Gera PDF com dados estáticos",
         "info": "",
-        "x": 390,
-        "y": 1120,
+        "x": 370,
+        "y": 1500,
         "wires": []
     },
     {
@@ -4032,8 +4032,8 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 460,
-        "y": 1060,
+        "x": 440,
+        "y": 1440,
         "wires": [
             [
                 "ecde103aaf1b3dd1"
@@ -4052,8 +4052,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 630,
-        "y": 1060,
+        "x": 610,
+        "y": 1440,
         "wires": [
             [
                 "22979f2df931cb77"
@@ -4072,8 +4072,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 1060,
+        "x": 800,
+        "y": 1440,
         "wires": [
             [
                 "7fadcbf40f3998df"
@@ -4087,8 +4087,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1010,
-        "y": 1060,
+        "x": 990,
+        "y": 1440,
         "wires": []
     },
     {
@@ -4097,8 +4097,8 @@
         "z": "ce71a40f58e8877b",
         "name": "http",
         "info": "http://[IP_DO_SEU_X20EDGE]:1880/abrir-pdf",
-        "x": 330,
-        "y": 1060,
+        "x": 310,
+        "y": 1440,
         "wires": []
     },
     {
@@ -4111,8 +4111,8 @@
         "y": 300,
         "wires": [
             [
-                "87bfe4a2288eda34",
-                "e86235be796258a5"
+                "e86235be796258a5",
+                "87bfe4a2288eda34"
             ]
         ]
     },
@@ -4152,14 +4152,13 @@
         "z": "ce71a40f58e8877b",
         "mydb": "88fd8878f39950c9",
         "name": "",
-        "x": 730,
+        "x": 750,
         "y": 740,
         "wires": [
             [
                 "b11e84cb658ca9f5",
-                "e15074272a149573",
-                "4734cea4dad6afde",
-                "906b023ad10ec29a"
+                "f9b242dff4a4bd56",
+                "558085c4744dfcb9"
             ]
         ]
     },
@@ -4204,8 +4203,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 900,
+        "x": 1010,
+        "y": 880,
         "wires": [
             [
                 "d095953c7a53f59e"
@@ -4225,8 +4224,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1360,
-        "y": 660,
+        "x": 1420,
+        "y": 760,
         "wires": []
     },
     {
@@ -4283,205 +4282,10 @@
         "mobileBreakpointType": "defaults",
         "action": "append",
         "className": "",
-        "x": 1190,
-        "y": 900,
+        "x": 1210,
+        "y": 880,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "4734cea4dad6afde",
-        "type": "function",
-        "z": "ce71a40f58e8877b",
-        "name": "function 12",
-        "func": "var pontos = [];\n\nmsg.payload.forEach(function(linha) {\n    pontos.push({\n        series: \"A\",\n        x: linha.valorHumi,\n        y: linha.valorTemp\n    });\n});\n\nmsg.payload = pontos;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 970,
-        "y": 680,
-        "wires": [
-            [
-                "02af50f42540b03a"
-            ]
-        ]
-    },
-    {
-        "id": "e15074272a149573",
-        "type": "function",
-        "z": "ce71a40f58e8877b",
-        "name": "Temperatura",
-        "func": "var pontos = [];\n\nmsg.payload.forEach(function(linha) {\n    pontos.push({\n        series: \"A\",\n        x: linha.data_formatada,\n        y: linha.valorTemp\n    });\n});\n\nmsg.payload = pontos;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 970,
-        "y": 820,
-        "wires": [
-            [
-                "fdffc89c1b9bea79"
-            ]
-        ]
-    },
-    {
-        "id": "36e6f147cb99eaae",
-        "type": "inject",
-        "z": "ce71a40f58e8877b",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[{\"series\":\"A\",\"x\":5,\"y\":84},{\"series\":\"A\",\"x\":9,\"y\":10},{\"series\":\"A\",\"x\":11,\"y\":70},{\"series\":\"B\",\"x\":12,\"y\":28},{\"series\":\"B\",\"x\":15,\"y\":35},{\"series\":\"B\",\"x\":26,\"y\":42},{\"series\":\"C\",\"x\":20,\"y\":12},{\"series\":\"C\",\"x\":24,\"y\":54},{\"series\":\"C\",\"x\":27,\"y\":60},{\"series\":\"C\",\"x\":30,\"y\":66}]",
-        "payloadType": "json",
-        "x": 1190,
-        "y": 600,
-        "wires": [
-            [
-                "701ce2930b1de0ce"
-            ]
-        ]
-    },
-    {
-        "id": "701ce2930b1de0ce",
-        "type": "ui-chart",
-        "z": "ce71a40f58e8877b",
-        "d": true,
-        "group": "6c2ed50c62f6849d",
-        "name": "",
-        "label": "chart",
-        "order": 3,
-        "chartType": "line",
-        "category": "series",
-        "categoryType": "property",
-        "xAxisLabel": "",
-        "xAxisProperty": "x",
-        "xAxisPropertyType": "property",
-        "xAxisType": "time",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "xmin": "",
-        "xmax": "",
-        "yAxisLabel": "",
-        "yAxisProperty": "y",
-        "yAxisPropertyType": "property",
-        "ymin": "",
-        "ymax": "",
-        "bins": 10,
-        "action": "append",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#0095ff",
-            "#ff0000",
-            "#ff7f0e",
-            "#2ca02c",
-            "#a347e1",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": 6,
-        "height": 8,
-        "className": "",
-        "interpolation": "linear",
-        "x": 1190,
-        "y": 660,
-        "wires": [
-            [
-                "9b1318b4bed694a1"
-            ]
-        ]
-    },
-    {
-        "id": "02af50f42540b03a",
-        "type": "ui-chart",
-        "z": "ce71a40f58e8877b",
-        "d": true,
-        "group": "6c2ed50c62f6849d",
-        "name": "",
-        "label": "chart",
-        "order": 6,
-        "chartType": "line",
-        "category": "",
-        "categoryType": "none",
-        "xAxisLabel": "",
-        "xAxisProperty": "x",
-        "xAxisPropertyType": "property",
-        "xAxisType": "linear",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "xmin": "",
-        "xmax": "",
-        "yAxisLabel": "",
-        "yAxisProperty": "y",
-        "yAxisPropertyType": "property",
-        "ymin": "",
-        "ymax": "",
-        "bins": 10,
-        "action": "append",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#0095ff",
-            "#ff0000",
-            "#ff7f0e",
-            "#2ca02c",
-            "#a347e1",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": 6,
-        "height": 8,
-        "className": "",
-        "interpolation": "linear",
-        "x": 1190,
-        "y": 720,
-        "wires": [
-            [
-                "9b1318b4bed694a1"
-            ]
         ]
     },
     {
@@ -4491,7 +4295,7 @@
         "group": "dcbdfdb4ce15e7fa",
         "name": "",
         "label": "Temperatura ºC",
-        "order": 2,
+        "order": 3,
         "chartType": "line",
         "category": "series",
         "categoryType": "property",
@@ -4540,31 +4344,11 @@
         "height": 8,
         "className": "",
         "interpolation": "linear",
-        "x": 1220,
+        "x": 1240,
         "y": 820,
         "wires": [
             [
                 "9b1318b4bed694a1"
-            ]
-        ]
-    },
-    {
-        "id": "906b023ad10ec29a",
-        "type": "function",
-        "z": "ce71a40f58e8877b",
-        "name": "Humidade",
-        "func": "var pontos = [];\n\nmsg.payload.forEach(function(linha) {\n    pontos.push({\n        series: linha.serial,\n        x: linha.data_formatada,\n        y: linha.valorHumi\n    });\n});\n\nmsg.payload = pontos;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 970,
-        "y": 760,
-        "wires": [
-            [
-                "b4de7e92138d0a5d"
             ]
         ]
     },
@@ -4575,7 +4359,7 @@
         "group": "dcbdfdb4ce15e7fa",
         "name": "",
         "label": "Humidade %",
-        "order": 3,
+        "order": 2,
         "chartType": "line",
         "category": "series",
         "categoryType": "property",
@@ -4624,75 +4408,12 @@
         "height": 8,
         "className": "",
         "interpolation": "linear",
-        "x": 1210,
-        "y": 760,
+        "x": 1230,
+        "y": 720,
         "wires": [
             [
                 "9b1318b4bed694a1"
             ]
-        ]
-    },
-    {
-        "id": "ccc01d1be0dcb62c",
-        "type": "ui-chart",
-        "z": "ce71a40f58e8877b",
-        "d": true,
-        "group": "6c2ed50c62f6849d",
-        "name": "",
-        "label": "Temperatura ºC",
-        "order": 4,
-        "chartType": "line",
-        "category": "",
-        "categoryType": "none",
-        "xAxisLabel": "Data/Hora",
-        "xAxisProperty": "x",
-        "xAxisPropertyType": "property",
-        "xAxisType": "category",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "xmin": "",
-        "xmax": "",
-        "yAxisLabel": "TºC",
-        "yAxisProperty": "y",
-        "yAxisPropertyType": "property",
-        "ymin": "-40",
-        "ymax": "40",
-        "bins": 10,
-        "action": "append",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#0095ff",
-            "#ff0000",
-            "#ff7f0e",
-            "#2ca02c",
-            "#a347e1",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": 6,
-        "height": 8,
-        "className": "",
-        "interpolation": "linear",
-        "x": 1220,
-        "y": 860,
-        "wires": [
-            []
         ]
     },
     {
@@ -4701,8 +4422,8 @@
         "z": "ce71a40f58e8877b",
         "name": "Configurações de tabelas e gráficos",
         "info": "",
-        "x": 400,
-        "y": 600,
+        "x": 240,
+        "y": 620,
         "wires": []
     },
     {
@@ -4886,7 +4607,7 @@
         "group": "6c2ed50c62f6849d",
         "name": "",
         "label": "Gerar Novo PDF",
-        "order": 5,
+        "order": 3,
         "width": "1",
         "height": "1",
         "emulateClick": false,
@@ -4966,5 +4687,73 @@
                 "74b726245f9b84a4"
             ]
         ]
+    },
+    {
+        "id": "68078e4fbcf0a183",
+        "type": "inject",
+        "z": "ce71a40f58e8877b",
+        "name": "Limpeza de Dados",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 1010,
+        "y": 700,
+        "wires": [
+            [
+                "b4de7e92138d0a5d"
+            ]
+        ],
+        "info": "Limpa os dados manualmente"
+    },
+    {
+        "id": "f9b242dff4a4bd56",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "Temperatura 2.0",
+        "func": "\nvar pontos = [];\n\nlet msgLimpeza = { payload: [] };\n\nmsg.payload.forEach(function(linha) {\n    pontos.push({\n        series: linha.serial,\n        x: linha.data_formatada,\n        y: linha.valorTemp\n    });\n});\n\nlet msgDados = { \npayload: pontos,\n};\n\nreturn [ [msgLimpeza, msgDados] ];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 820,
+        "wires": [
+            [
+                "fdffc89c1b9bea79"
+            ]
+        ],
+        "info": "//Código sem limpeza de dados\r\nvar pontos = [];\r\n\r\nmsg.payload.forEach(function(linha) {\r\n    pontos.push({\r\n        series: linha.serial,\r\n        x: linha.data_formatada,\r\n        y: linha.valorTemp\r\n    });\r\n});\r\n\r\nmsg.payload = pontos;\r\n\r\nreturn msg;"
+    },
+    {
+        "id": "558085c4744dfcb9",
+        "type": "function",
+        "z": "ce71a40f58e8877b",
+        "name": "Humidade 2.0",
+        "func": "\nvar pontos = [];\n\nlet msgLimpeza = { payload: [] };\n\nmsg.payload.forEach(function(linha) {\n    pontos.push({\n        series: linha.serial,\n        x: linha.data_formatada,\n        y: linha.valorHumi\n    });\n});\n\nlet msgDados = { \npayload: pontos,\n};\n\nreturn [ [msgLimpeza, msgDados] ];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 760,
+        "wires": [
+            [
+                "b4de7e92138d0a5d"
+            ]
+        ],
+        "info": "//Código sem a limpeza de dados\r\nvar pontos = [];\r\n\r\nmsg.payload.forEach(function(linha) {\r\n    pontos.push({\r\n        series: linha.serial,\r\n        x: linha.data_formatada,\r\n        y: linha.valorHumi\r\n    });\r\n});\r\n\r\nmsg.payload = pontos;\r\n\r\nreturn msg;"
     }
 ]
